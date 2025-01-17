@@ -7,12 +7,4 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
-stories-app-functionality
-db.sqlite3
-venv/
-development
-.dist
-.vscode
-.gitpod.yml
-.gitpod.dockerfile
-
+venv

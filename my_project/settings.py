@@ -11,15 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-import os
-import sys
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
-
-if os.path.isfile('env.py'):
-    import env
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -46,13 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cloudinary_storage',
-    'cloudinary',
-
-    # Project apps
-    'home',
-    'stories',
-    'reports',
 ]
 
 MIDDLEWARE = [
@@ -70,7 +54,7 @@ ROOT_URLCONF = 'my_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path. join(BASE_DIR, "templates")],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,22 +117,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-
-# MEDIA_URL configurado
-MEDIA_URL = f'https://res.cloudinary.com/{os.environ.get("CLOUD_NAME")}/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-# Almacenamiento de archivos multimedia en Cloudinary
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
-# Cloudinary configuration
-cloudinary.config(
-    cloud_name=os.environ.get('CLOUD_NAME'),
-    api_key=os.environ.get('CLOUD_API_KEY'),
-    api_secret=os.environ.get('CLOUD_API_KEY')
-)
