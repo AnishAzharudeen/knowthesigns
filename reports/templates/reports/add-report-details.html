@@ -3,9 +3,14 @@
 {% block content %}
     <div>
         <form action="{% url 'create-report' %}" method="post" class="form">
-           <h1>Test</h1>
-           <h2>ID: {{ report.id }}</h2>
-           <p>{{ report.message }}</p>
+            {% csrf_token %}
+            {% for field in report_details_form %}
+            <div class="form-group">
+                {{ field.label_tag }} 
+                {{ field }}
+            </div>
+            {% endfor %}
+            <button type="submit">Add details to your report</button>
         </form>
     </div>
 {% endblock %}
