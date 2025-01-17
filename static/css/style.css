@@ -1,3 +1,11 @@
+/* General styles */
+
+.bg-head {
+    background-color: #DDDBCB !important;
+}
+
+/* Colors */
+
 .onyx {
     color: #313638;
 }
