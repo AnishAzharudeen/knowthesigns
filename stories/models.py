@@ -8,6 +8,10 @@ class Story(models.Model):
     content = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        '''Meta options for the story model'''
+        verbose_name_plural = "Stories"
+
     def __str__(self):
         '''String representation of a story'''
         return str(self.title)
