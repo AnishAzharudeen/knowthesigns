@@ -1,14 +1,11 @@
 <!-- Needs to be extended from base.html once created  -->
 <!-- This is a PLACEHOLDER template  -->
  
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stories</title>
-</head>
-<body>
+{% block content %}
+
+    {% for story in stories %}
+        <h1>{{ story.title }}</h1>
+        <p>{{ story.content }}</p>
+    {% endfor %}
     
-</body>
-</html>
+{% endblock %}
