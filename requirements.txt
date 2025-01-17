@@ -1,3 +1,7 @@
 asgiref==3.8.1
+certifi==2024.12.14
+cloudinary==1.42.1
 Django==4.2.18
+six==1.17.0
 sqlparse==0.5.3
+urllib3==2.3.0
