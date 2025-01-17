@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <form action="{% url 'add-report-details' %}" method="post" class="form">
+            {% csrf_token %}
+            {% for field in report_details_form %}
+            <div class="form-group">
+                {{ field.label_tag }} 
+                {{ field }}
+            </div>
+            {% endfor %}
+
+
+            <button type="submit">Add details to your report</button>
+        </form>
+    </div>
+{% endblock %}
