@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <form action="{% url 'create-report' %}" method="post" class="form">
+           <h1>Test</h1>
+           <h2>ID: {{ report.id }}</h2>
+           <p>{{ report.message }}</p>
+        </form>
+    </div>
+{% endblock %}
