@@ -30,6 +30,15 @@ def add_report_details(request):
 
     report = Report.objects.get(pk=report_id)
 
+    if request.method == 'POST':
+        form = ReportDetailsForm(request.POST)
+        if form.is_valid():
+            form.instance.report = report
+            form.save()
+            messages.success(request,
+                             'Report details added to report successfully.')
+            return redirect('homepage')
+
     context = {
         'report': report,
         'report_details_form': ReportDetailsForm,
