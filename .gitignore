@@ -12,7 +12,8 @@ stories-app-functionality
 db.sqlite3
 venv/
 development
-=======
-venv
+.dist
 .vscode
->>>>>>> richard
+.gitpod.yml
+.gitpod.dockerfile
+
