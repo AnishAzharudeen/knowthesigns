@@ -38,6 +38,6 @@ class ActionMessage(models.Model):
     '''Model for action messages to be added to a report by workers.'''
     report = models.ForeignKey(Report, related_name="action_messages",
                                on_delete=models.CASCADE)
-    worker_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    worker_user = models.ForeignKey(User, on_delete=models.CASCADE)
     update_message = models.TextField(null=False, blank=False)
-    date_posted = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True)

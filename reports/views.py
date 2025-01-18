@@ -5,7 +5,6 @@ from django.contrib import messages
 from django.http import HttpResponseForbidden
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
 
 
 def create_report(request):
@@ -84,11 +83,23 @@ def view_reports(request):
 def report_detail(request, report_id):
     '''Returns the page for workers to view a specific report and update it.'''
     report = Report.objects.get(pk=report_id)
-    report.read = True
-    report.save()
+
+    if request.method == 'POST':
+        update_message = request.POST['update-message']
+
+        # Create an action message for the report
+        report.action_messages.create(worker_user=request.user,
+                                      update_message=update_message)
+
+    if report.read is True:
+        action_messages = report.action_messages.all()
+    else:
+        report.read = True
+        report.save()
 
     context = {
         'report': report,
+        'action_messages': action_messages,
     }
     return render(request, 'reports/workers/report-detail.html', context)
 
