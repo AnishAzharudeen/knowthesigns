@@ -106,6 +106,7 @@ WSGI_APPLICATION = "my_project.wsgi.application"
    #     "NAME": BASE_DIR / "db.sqlite3",
     #}
 #}
+# Heroku database configuration
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
