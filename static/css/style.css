@@ -12,6 +12,10 @@ p {
     background-color: #DDDBCB !important;
 }
 
+.hide { 
+    display: none;
+}
+
 /* Testeminies */
 
 .reason {
