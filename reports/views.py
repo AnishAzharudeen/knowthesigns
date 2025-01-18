@@ -91,16 +91,19 @@ def report_detail(request, report_id):
         report.action_messages.create(worker_user=request.user,
                                       update_message=update_message)
 
+    context = {
+        'report': report
+    }
+
     if report.read is True:
         action_messages = report.action_messages.all()
+
+        # Add action messages to the context
+        context['action_messages'] = action_messages
     else:
         report.read = True
         report.save()
 
-    context = {
-        'report': report,
-        'action_messages': action_messages,
-    }
     return render(request, 'reports/workers/report-detail.html', context)
 
 
