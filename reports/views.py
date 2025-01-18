@@ -71,7 +71,10 @@ def worker_login_page(request):
 @login_required
 def view_reports(request):
     '''Returns the page for workers to view reports.'''
-    reports = Report.objects.all()
+    # Actioned at bottom, then oldest at bottom, then unread
+    reports = Report.objects.all().order_by('actioned',
+                                            'date_created',
+                                            '-read')
 
     context = {
         'reports': reports,

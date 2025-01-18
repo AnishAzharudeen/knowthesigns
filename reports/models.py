@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Report(models.Model):
     '''Model for creating a report that contains the user's message.'''
     message = models.TextField(null=False, blank=False)
-    date_posted = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)
     actioned = models.BooleanField(default=False)
     actioned_date = models.DateTimeField(null=True)
