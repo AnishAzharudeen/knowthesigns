@@ -54,6 +54,7 @@ here we neeed to add a description
     <p>Mobile</p>
   <img src="./static/doc_images/wire_frame_mobile.png"/>
 
+
 </span>
     
 
@@ -63,15 +64,10 @@ here we neeed to add a description
   Database Structure:
 
 
-![data base structure ](./static/doc_images/mysql_squema.png)
-
 * [Back to Contents](#contents)
 
   ### Color Scheme
   The main colours of orange, dark blue and white were chosen for maximum contrast. I used [Coolors](https://coolors.co) to generate a colour palette.
-
-
-![colors](./static/doc_images/palet_colors.png)
 
 
   I used [Canva](https://www.canva.com/) to generate a logo and a style guide.
