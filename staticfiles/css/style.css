@@ -1,0 +1,125 @@
+/*main tags rules*/
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* General styles */
+
+.bg-head {
+    background-color: #DDDBCB !important;
+}
+
+/* Testeminies */
+
+.reason {
+    padding: 10px;
+}
+
+.reason:hover {
+    border: 1px solid #313638;
+    border-radius: 5px;
+    background-color: #F5F1E3;
+}
+
+/* This color could also be the "bone" color */
+.testemony:hover {
+    background-color: #F5F1E3;
+    font-weight: 500;
+}
+
+.testemony:hover > .text-muted {
+    color: #313638 !important;
+}
+
+/* Report Form */
+
+.full-form {
+    margin: 15px;
+    border: 1px solid #313638;
+    border-radius: 5px;
+    background-color: #F5F1E3;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  button[type="submit"] {
+    float: right;
+    margin-right: 15px;
+  }
+
+/* Colors */
+
+.onyx {
+    color: #313638;
+}
+
+.munsell {
+    color: #1B9AAA;
+}
+
+.bone {
+    color: #DDDBCB;
+}
+
+.oldlace {
+    color: #F5F1E3;
+}
+
+.white {
+    color: #FFFFFF;
+}
+
+/*Nav bar elements*/
+
+.nav-link {
+    color: white!important;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #1B9AAA!important;
+    transition: 0.5s ease-in-out all;
+}
+
+.nav-link::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border-bottom: #1B9AAA solid 1px ;
+    width: 0%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+@media (max-width:990px){
+
+    .nav-link:hover::before {
+        width: 15%;
+    }
+}

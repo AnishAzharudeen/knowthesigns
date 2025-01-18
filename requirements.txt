@@ -1,4 +1,13 @@
 asgiref==3.8.1
+certifi==2024.12.14
+charset-normalizer==3.4.1
+cloudinary==1.42.1
+crispy-bootstrap5==2024.10
 Django==4.2.18
-gunicorn==20.1.0
+django-cloudinary-storage==0.3.0
+django-crispy-forms==2.3
+idna==3.10
+requests==2.32.3
+six==1.17.0
 sqlparse==0.5.3
+urllib3==2.3.0
