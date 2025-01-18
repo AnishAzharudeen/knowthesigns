@@ -3,6 +3,9 @@ from .forms import ReportForm, ReportDetailsForm
 from .models import Report
 from django.contrib import messages
 from django.http import HttpResponseForbidden
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 
 
 def create_report(request):
@@ -44,3 +47,54 @@ def add_report_details(request):
         'report_details_form': ReportDetailsForm,
     }
     return render(request, 'reports/add-report-details.html', context)
+
+
+def worker_login_page(request):
+    '''Returns the page for workers to login.'''
+
+    # If worker already logged in, redirect to view reports page.
+    if request.user.is_authenticated:
+        return redirect('view-reports')
+
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            messages.success(request, 'Login successful.')
+            return redirect('view-reports')
+        else:
+            messages.error(request, 'Invalid credentials.')
+    return render(request, 'reports/workers/worker-login.html')
+
+
+@login_required
+def view_reports(request):
+    '''Returns the page for workers to view reports.'''
+    reports = Report.objects.all()
+
+    context = {
+        'reports': reports,
+    }
+    return render(request, 'reports/workers/view-reports.html', context)
+
+
+@login_required
+def report_detail(request, report_id):
+    '''Returns the page for workers to view a specific report and update it.'''
+    report = Report.objects.get(pk=report_id)
+    report.read = True
+    report.save()
+
+    context = {
+        'report': report,
+    }
+    return render(request, 'reports/workers/report-detail.html', context)
+
+
+@login_required
+def logout_user(request):
+    logout(request)
+    messages.success(request, 'Logout successful.')
+    return redirect('home')

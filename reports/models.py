@@ -12,8 +12,9 @@ class Report(models.Model):
 
 class ReportDetails(models.Model):
     '''Model for report details to be added to a report.'''
+    report = models.OneToOneField(Report, related_name="details",
+                                  on_delete=models.CASCADE)
     name = models.CharField(max_length=50, null=True, blank=True)
-    report = models.ForeignKey(Report, on_delete=models.CASCADE)
     first_line_address = models.CharField(max_length=100,
                                           null=True,
                                           blank=True)

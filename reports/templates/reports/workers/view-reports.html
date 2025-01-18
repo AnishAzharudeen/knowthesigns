@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for report in reports %}
+
+        <div class="container">
+            <!-- Passes report id to the report detail view -->
+            <a href="{% url 'report-detail' report.id %}">
+                <div>
+                    <h2>{{ report.date_created }}</h2>
+                    <h3>Read: {{ report.read }}</h3>
+                    <div>
+                        <p>{{ report.message }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+
+{% endblock %}
