@@ -48,14 +48,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # utilities
     'cloudinary_storage',
     'cloudinary',
+    'crispy_forms',
+    'crispy_bootstrap5', 
 
     # Project apps
     'home',
     'stories',
     'reports',
 ]
+
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -68,6 +75,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "my_project.urls"
+
+
+
 
 TEMPLATES = [
     {

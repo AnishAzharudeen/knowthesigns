@@ -5,6 +5,14 @@ from .models import Report, ReportDetails
 
 class ReportForm(forms.ModelForm):
     '''Form for creating a report'''
+    message = forms.CharField(
+        widget=forms.Textarea(attrs={
+            'placeholder': 'Write your message here...', 
+            'rows': 5,  
+            'cols': 40  
+        }),
+        label='',  
+    )
     class Meta:
         model = Report
         fields = ['message']
