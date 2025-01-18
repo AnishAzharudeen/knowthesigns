@@ -81,6 +81,19 @@ def view_reports(request):
 
 
 @login_required
+def report_detail(request, report_id):
+    '''Returns the page for workers to view a specific report and update it.'''
+    report = Report.objects.get(pk=report_id)
+    report.read = True
+    report.save()
+
+    context = {
+        'report': report,
+    }
+    return render(request, 'reports/workers/report-detail.html', context)
+
+
+@login_required
 def logout_user(request):
     logout(request)
     messages.success(request, 'Logout successful.')
