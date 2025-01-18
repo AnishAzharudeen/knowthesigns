@@ -1,11 +1,111 @@
 <!-- Needs to be extended from base.html once created  -->
 <!-- This is a PLACEHOLDER template  -->
- 
-{% block content %}
 
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="col-10 offset-1 col-md-8 offset-md-2">
+  <h2 class="text-center">Why are survivor testimonies so important?</h2>
+  <br />
+  <h6>
+    Survivor testimonies provide invaluable insights into the realities of human
+    trafficking, shedding light on the complexities and nuances of this crime.
+    They humanize the statistics, allowing audiences to connect emotionally with
+    the experiences of those affected. These stories serve multiple purposes:
+  </h6>
+  <br />
+</div>
+<!-- I would like some kind of border around the 4 pillars, possibly with hover effects -->
+<div class="col-10 offset-1">
+  <div class="row row-cols-1 row-cols-md-2">
+    <p>
+      1: Awareness and Education: Survivor accounts educate the public about the
+      various forms of trafficking, helping to dispel myths and misconceptions.
+      They highlight the tactics used by traffickers and the vulnerabilities
+      that can lead to exploitation.
+    </p>
+    <p>
+      2: Advocacy for Change: By sharing their experiences, survivors advocate
+      for policy changes and improved support systems for victims. Their voices
+      can influence legislation and drive initiatives aimed at prevention and
+      rehabilitation.
+    </p>
+    <p>
+      3: Empowerment: Survivor stories empower others who may be experiencing
+      similar situations, showing them that recovery is possible. They foster a
+      sense of hope and resilience, encouraging victims to seek help and
+      support.
+    </p>
+    <p>
+      4: Community Engagement: These narratives can mobilize communities to take
+      action against trafficking. They inspire individuals to participate in
+      prevention efforts, support organizations working in this field, and
+      engage in advocacy.
+    </p>
+  </div>
+  <hr />
+</div>
+<br>
+<div class="col-10 offset-1 col-md-8 offset-md-2">
+  <h4 class="text-center">The following testimonies will show you first hand how such experiences will affect humans</h4>
+</div>
+<div class="col-12">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mg-btm">
     {% for story in stories %}
-        <h1>{{ story.title }}</h1>
-        <p>{{ story.content }}</p>
+
+    <div class="col">
+      <div
+        class="card h-100 {% if story.pinned %}border border-dark rounded{% endif %}"
+      >
+        {% if story.pinned %}
+
+        <div class="card-header">
+          <i class="fas fa-thumbtack"></i> Pinned Testimonies
+        </div>
+        {% endif %}
+        <div class="card-post card-body d-flex flex-column">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+          </div>
+          <hr />
+          <h2 class="card-title">{{ story.title }}</h2>
+          <p class="card-text">{{ story.content | safe }}</p>
+          <p class="card-text text-muted">{{ story.created_on }}</p>
+          <div class="row">
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div>
     {% endfor %}
-    
-{% endblock %}
+  </div>
+
+  {% if is_paginated %}
+
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center mg-top">
+      {% if page_obj.has_previous %}
+
+      <li>
+        <a
+          class="btn btn-edit mg-r-xs"
+          href="?page={{ page_obj.previous_page_number }}"
+          >&laquo; PREV</a
+        >
+      </li>
+      {% endif %} {% if page_obj.has_next %}
+
+      <li>
+        <a
+          class="btn btn-edit mg-l-xs"
+          href="?page={{ page_obj.next_page_number }}"
+          >NEXT &raquo;</a
+        >
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %} {% endblock %}
+</div>
+
