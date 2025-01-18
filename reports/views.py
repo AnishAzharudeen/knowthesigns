@@ -37,7 +37,7 @@ def add_report_details(request):
             form.save()
             messages.success(request,
                              'Report details added to report successfully.')
-            return redirect('homepage')
+            return redirect('home')
 
     context = {
         'report': report,
