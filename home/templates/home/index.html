@@ -1,10 +1,30 @@
 {% extends "base.html" %}
-
+{% load crispy_forms_tags %}
 {% load static %}
 
 {% block content %}
+<div class="header-container">
+    <div class="row justify-content-around align-items-center">
+        <div class="col-6 p-5">
+            <h3 class="munsell text-bolder">Empowering Lives, Ending Exploitation</h3>
+            <p class="text-white">Human trafficking and modern slavery affect millions of people worldwide, depriving individuals of their freedom and dignity. Our mission is to combat these injustices through awareness, education, and actionable solutions.</p>
+        </div>
+        <div class="col-4 p-sm-0 text-end">
+            <div id="contact" class="m-3 ">
+                <!-- The create_report view is in the 'reports' app -->
+                <form action="{% url 'create-report' %}" method="post" class="form">
+                    {% csrf_token %}
+                    {{ report_form | crispy }}
+                    <button type="submit" class="btn btn-lg btn-info">Report anonymously</button>
+                </form>
+            </div>
+        </div>
 
-    <div id="contact"></div>
+    </div>
+</div>
+
+    
+
     <div id="testimonies"></div>
     <div id="assessment"></div>
 {% endblock %}

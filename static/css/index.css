@@ -1,0 +1,9 @@
+.header-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header_bg.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    place-items: center;
+    min-height: 60vh;
+
+}

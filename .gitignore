@@ -6,12 +6,7 @@ __pycache__/
 *.py[cod]
 node_modules/
 .github/
-cloudinary_python.txt
-<<<<<<< HEAD
-stories-app-functionality
-db.sqlite3
 venv/
-development
 .dist
 .vscode
 .gitpod.yml
