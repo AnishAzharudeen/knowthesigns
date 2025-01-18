@@ -88,3 +88,38 @@ p {
 .white {
     color: #FFFFFF;
 }
+
+/*Nav bar elements*/
+
+.nav-link {
+    color: white!important;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: #1B9AAA!important;
+    transition: 0.5s ease-in-out all;
+}
+
+.nav-link::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    border-bottom: #1B9AAA solid 1px ;
+    width: 0%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+@media (max-width:990px){
+
+    .nav-link:hover::before {
+        width: 15%;
+    }
+}
