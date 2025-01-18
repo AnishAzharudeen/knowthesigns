@@ -3,6 +3,7 @@ from .forms import ReportForm, ReportDetailsForm
 from .models import Report
 from django.contrib import messages
 from django.http import HttpResponseForbidden
+from django.contrib.auth import authenticate, login
 
 
 def create_report(request):
@@ -44,3 +45,19 @@ def add_report_details(request):
         'report_details_form': ReportDetailsForm,
     }
     return render(request, 'reports/add-report-details.html', context)
+
+
+def worker_login_page(request):
+    '''Returns the page for workers to login.'''
+
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            messages.success(request, 'Login successful.')
+            return redirect('home')
+        else:
+            messages.error(request, 'Invalid credentials.')
+    return render(request, 'reports/worker-login.html')
