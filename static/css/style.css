@@ -12,6 +12,61 @@ p {
     background-color: #DDDBCB !important;
 }
 
+/* Testeminies */
+
+.reason {
+    padding: 10px;
+}
+
+.reason:hover {
+    border: 1px solid #313638;
+    border-radius: 5px;
+    background-color: #F5F1E3;
+}
+
+/* This color could also be the "bone" color */
+.testemony:hover {
+    background-color: #F5F1E3;
+    font-weight: 500;
+}
+
+.testemony:hover > .text-muted {
+    color: #313638 !important;
+}
+
+/* Report Form */
+
+.full-form {
+    margin: 15px;
+    border: 1px solid #313638;
+    border-radius: 5px;
+    background-color: #F5F1E3;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    margin-left: 10%;
+    text-align: left;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  button[type="submit"] {
+    float: right;
+    margin-right: 15px;
+  }
+
 /* Colors */
 
 .onyx {

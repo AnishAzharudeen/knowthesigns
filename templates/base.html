@@ -29,10 +29,12 @@
       <nav>
         <p>Here goes the navbar - possibly invisible</p>
       </nav>
+    </div>
+    <main class="flex-shrink-0 light-bg">
       <!-- Django messages -->
-      <!-- <div class="container">
+      <div class="container">
       <div class="row">
-        <div class="col-md-8 offset-md-2">
+        <div class="text-end">
           {% for message in messages %}
           <div class="alert {{ message.tags }}" id="msg" role="alert">
             {{ message | safe }}
@@ -41,9 +43,7 @@
           {% endfor %}
         </div>
       </div>
-</div> -->
-    </div>
-    <main class="flex-shrink-0 light-bg">
+  </div>
       {% block content %}
 
       <!-- Content Goes here -->
