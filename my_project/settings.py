@@ -16,6 +16,7 @@ import sys
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
+import dj_database_url
 
 if os.path.isfile("env.py"):
     import env
@@ -99,8 +100,6 @@ TEMPLATES = [
 WSGI_APPLICATION = "my_project.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 if DEVELOPMENT == "True":
     DATABASES = {
         "default": {
@@ -118,7 +117,6 @@ else:
             "HOST": os.environ.get("AWS_HOST"),
         }
     }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
