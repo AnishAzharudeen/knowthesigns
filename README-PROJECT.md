@@ -46,10 +46,14 @@ here we neeed to add a description
    The initial wireframes were created in [Miro](https://miro.com/es/) to understand how the site would work, and this layout would drive User Stories, the logic required and overall design artwork decisions.
 
 
-<span style="display:flex; justify-content:space-between; align-items:top;">
-  <img src="./static/doc_images/wireframe_1.png"/>
-  <img src="./static/doc_images/wireframe_2.png"/>
-  <img src="./static/doc_images/wireframe_3.png"/>
+<span style="justify-content:space-between; align-items:top;">
+  <p>Desktop</p>
+  <img src="./static/doc_images/wire_frame_desktop.png"/>
+
+  </br>
+    <p>Mobile</p>
+  <img src="./static/doc_images/wire_frame_mobile.png"/>
+
 
 </span>
     
@@ -60,15 +64,10 @@ here we neeed to add a description
   Database Structure:
 
 
-![data base structure ](./static/doc_images/iron_fitnes.png)
-
 * [Back to Contents](#contents)
 
   ### Color Scheme
   The main colours of orange, dark blue and white were chosen for maximum contrast. I used [Coolors](https://coolors.co) to generate a colour palette.
-
-
-![data base structure ](./static/doc_images/palet_color.png)
 
 
   I used [Canva](https://www.canva.com/) to generate a logo and a style guide.
@@ -76,8 +75,6 @@ here we neeed to add a description
 
 <span style="display:flex; gap:50px; text-align:center;">
 
-
-    ![simplify logo ](./static/images/logo1.png)
 
     ![complete logo ](./static/images/logo2.png)
 
