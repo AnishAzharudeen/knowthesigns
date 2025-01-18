@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -10,6 +11,10 @@
             <div>
                 <h2>{{ report.date_created }}</h2>
                 <h3>Actioned: {{ report.actioned }}</h3>
+                <!-- Uses JS to resolve/unresolve then reloads page -->
+                <button id="mark-resolved-button">Mark as {% if report.actioned %}un{% endif %}resolved</button>
+                <!-- This <p> is used by JS to display error message -->
+                <p class="hide" id="mark-resolved-error-msg">Something went wrong</p>
                 <div>
                     <p>{{ report.message }}</p>
                 </div>
@@ -65,4 +70,10 @@
         {% endif %}
     </div>
 
+{% endblock %}
+
+{% block extras %}
+    <input type="hidden" id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    <input type="hidden" id="report-id" name="report-id" value="{{ report.id }}">
+    <script src="{% static 'reports/js/mark-resolved-button.js' %}"></script>
 {% endblock %}

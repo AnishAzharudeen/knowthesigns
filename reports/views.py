@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import ReportForm, ReportDetailsForm
 from .models import Report
 from django.contrib import messages
-from django.http import HttpResponseForbidden
+from django.http import HttpResponseForbidden, JsonResponse
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
@@ -109,6 +109,22 @@ def report_detail(request, report_id):
 
 @login_required
 def logout_user(request):
+    '''Logs out the worker and redirects to the home page.'''
     logout(request)
     messages.success(request, 'Logout successful.')
     return redirect('home')
+
+
+@login_required
+def mark_report_resolved(request, report_id):
+    '''
+        Marks a report as resolved when 'Mark as (un)resolved' tbn is clicked.
+        Uses AJAX to update the report actioned boolean.
+    '''
+    if request.method == 'POST':
+        report = Report.objects.get(pk=report_id)
+        report.actioned = not report.actioned
+        report.save()
+        response_data = {'message': 'success'}
+        return JsonResponse(response_data)
+    return JsonResponse({'error': 'Invalid request method'}, status=400)
