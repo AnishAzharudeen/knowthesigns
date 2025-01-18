@@ -35,7 +35,7 @@ SECRET_KEY = (os.environ.get("SECRET_KEY"))
 DEBUG = os.environ.get("DEBUG", False)
 
 # This is set to false in production, default is True to ensure production isn't affected
-DEVELOPMENT = os.environ.get("DEVELOPMENT", True)
+DEVELOPMENT = os.environ.get("DEVELOPMENT", "True")
 
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
@@ -101,8 +101,7 @@ WSGI_APPLICATION = "my_project.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-if DEVELOPMENT:
+if DEVELOPMENT == "True":
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.sqlite3",
@@ -117,7 +116,6 @@ else:
             "USER": os.environ.get("AWS_USER"),
             "PASSWORD": os.environ.get("AWS_PASSWORD"),
             "HOST": os.environ.get("AWS_HOST"),
-            "PORT": os.environ.get("AWS_PORT"),
         }
     }
 
