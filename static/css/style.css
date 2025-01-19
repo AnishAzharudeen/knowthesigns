@@ -44,6 +44,10 @@ h1, h2, h3, p {
     width: auto;
 }
 
+.carousel-style {
+    max-width: 70vw;
+}
+
 /* Home Page */
 
 .main-title{
@@ -243,7 +247,7 @@ h1, h2, h3, p {
 /* Homepage carousel */
 #carousel-stories-heading {
     text-align: center;
-    margin-top: 1em;
+    padding-top: 1em;
 }
 
 .carousel-seperator {
@@ -252,7 +256,7 @@ h1, h2, h3, p {
 }
 
 .carousel-item {
-    height: 20em;
+    height: 15em;
 }
 
 .carousel-story-container {

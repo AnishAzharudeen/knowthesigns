@@ -56,12 +56,11 @@ INSTALLED_APPS = [
     "crispy_forms",
     "crispy_bootstrap5",
     # Project apps
-    'home',
-    'stories',
-    'advice',
-    'reports',
-    'news',
-
+    "home",
+    "stories",
+    "advice",
+    "reports",
+    "news",
 ]
 
 
