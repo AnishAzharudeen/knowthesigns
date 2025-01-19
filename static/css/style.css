@@ -40,8 +40,16 @@ h1, h2, h3, p {
 /* Images */
 
 .image-high {
-    max-height: 50vh;
+    max-height: 70vh;
     width: auto;
+}
+
+@media (max-width:480px){
+    .image-high {
+        max-height: 50vh;
+        width: auto;
+    }
+    
 }
 
 .carousel-style {
@@ -124,6 +132,8 @@ h1, h2, h3, p {
 
 .sign-heading {
     text-decoration: underline;
+    text-decoration-color:#126a75 ;
+    text-underline-offset: 8px;
     padding-left: 10px;
 }
 
