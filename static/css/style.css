@@ -227,6 +227,11 @@ h1, h2, h3, p {
 }
 
 /* Homepage carousel */
+#story-carousel {
+    max-width: 1200px;
+    margin: auto;
+}
+
 #carousel-stories-heading {
     text-align: center;
     margin-top: 1em;
@@ -245,6 +250,7 @@ h1, h2, h3, p {
     min-height: 20em;
     text-align: center;
     width: 60%;
+    max-width: 700px;
     margin: auto;
 }
 
