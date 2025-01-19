@@ -9,7 +9,7 @@
         {% csrf_token %} 
 
         <div class="form-group row">
-            <label class="col-form-label">{{ report_message_form.message.label_tag }}</label>
+            <label class="col-form-label">{{ report_message_form.message.label }}</label>
             <div>
                 {{ report_message_form.message }}
             </div>
@@ -18,7 +18,7 @@
         {% for field in report_details_form %}
             <div class="form-group row">
                 <label class="col-form-label">{{ field.label }}</label>
-                <div class="">
+                <div>
                     {{ field }}
                 </div>
             </div>
