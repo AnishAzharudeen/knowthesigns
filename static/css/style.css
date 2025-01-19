@@ -53,7 +53,7 @@ h1, h2, h3, p {
         max-height: 50vh;
         width: auto;
     }
-    
+
 }
 
 .carousel-style {
@@ -326,9 +326,4 @@ h1, h2, h3, p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    width: 100%;
-    max-width: 400px;
 }
