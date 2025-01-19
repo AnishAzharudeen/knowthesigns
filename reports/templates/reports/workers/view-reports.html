@@ -15,18 +15,18 @@
                 <div class="card-header">
                     <div>
                         {% if report.read %}
-                        <img src="{% static 'img/read-mail.svg' %}" width="16" alt="read icon">
+                            <img src="{% static 'img/read-mail.svg' %}" width="16" alt="read icon">
 
-                        {% if report.actioned %}
-                        <img src="{% static 'img/tick.svg' %}" width="16" alt="actioned icon">
-                        <small>Resolved</small>
+                            {% if report.actioned %}
+                                <img src="{% static 'img/tick.svg' %}" width="16" alt="actioned icon">
+                                <small>Resolved</small>
+                            {% else %}
+                                <img src="{% static 'img/pending.svg' %}" width="16" alt="not actioned icon">
+                                <small>Pending</small>
+                            {% endif %}
                         {% else %}
-                        <img src="{% static 'img/pending.svg' %}" width="16" alt="not actioned icon">
-                        <small>Pending</small>
-                        {% endif %}
-                        {% else %}
-                        <img src="{% static 'img/unread-mail.svg' %}" width="16" alt="unread icon">
-                        <small>Unopened</small>
+                            <img src="{% static 'img/unread-mail.svg' %}" width="16" alt="unread icon">
+                            <small>Unopened</small>
                         {% endif %}
                     </div>
 

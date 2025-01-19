@@ -12,113 +12,118 @@
    
     <!-- REPORT DIV -->
     <div id="report-detail-container">
-            <div id="detail-header">
-                <div>
-                    {% if report.actioned %}
-                        <img src="{% static 'img/tick.svg' %}" width="16" alt="actioned icon">
-                        <small>Resolved</small>
+        <div id="detail-header">
+            <div>
+                {% if report.actioned %}
+                    <img src="{% static 'img/tick.svg' %}" width="16" alt="actioned icon">
+                    <small>Resolved</small>
+                {% else %}
+                    <img src="{% static 'img/pending.svg' %}" width="16" alt="not actioned icon">
+                    <small id="pending-text">Pending</small>
+                {% endif %}
+                <!-- Uses JS to resolve/unresolve then reloads page -->
+                <button id="mark-resolved-button" class="btn reports-btn mt-0">Mark as {% if report.actioned %}un{% endif %}resolved</button>
+                <!-- This <p> is used by JS to display error message -->
+                <p class="hide" id="mark-resolved-error-msg">Something went wrong</p>
+            </div>
+            <span id="detail-date">{{ report.date_created | date:'Y-m-d H:i' }}</span>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="report-message">
+                        <p>{{ report.message }}</p>
+                    </div>
+                    <br>
+                    <h4>Reporter details</h4>
+                    <hr>
+
+                    {% if report.details %}
+                        <div id="report-details">
+                            <div class="detail-item">
+                                <p><strong>Name:</strong></p>
+                                <p>{{ report.details.name }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>First Line Address:</strong></p>
+                                <p>{{ report.details.first_line_address }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Second Line Address:</strong></p>
+                                <p>{{ report.details.second_line_address }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Town/City:</strong></p>
+                                <p>{{ report.details.town_city }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>County:</strong></p>
+                                <p>{{ report.details.county }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Postcode:</strong></p>
+                                <p>{{ report.details.postcode }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Country:</strong></p>
+                                <p>{{ report.details.country }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Phone Number:</strong></p>
+                                <p>{{ report.details.phone_number }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Person of Trust:</strong></p>
+                                <p>{{ report.details.person_of_trust }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Person of Trust Phone Number:</strong></p>
+                                <p>{{ report.details.person_of_trust_phone_number }}</p>
+                            </div>
+                            <div class="detail-item">
+                                <p><strong>Image/Video URL:</strong></p>
+                                <p>{{ report.details.image_video_url }}</p>
+                            </div>
+                        </div>
                     {% else %}
-                        <img src="{% static 'img/pending.svg' %}" width="16" alt="not actioned icon">
-                        <small id="pending-text">Pending</small>
+                        <p class="margin-all">No further details available.</p>
                     {% endif %}
-                    <!-- Uses JS to resolve/unresolve then reloads page -->
-                    <button id="mark-resolved-btn" class="btn reports-btn mt-0">Mark as {% if report.actioned %}un{% endif %}resolved</button>
-                    <!-- This <p> is used by JS to display error message -->
-                    <p class="hide" id="mark-resolved-error-msg">Something went wrong</p>
                 </div>
-                <span id="detail-date">{{ report.date_created | date:'Y-m-d H:i' }}</span>
             </div>
             <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div id="report-message">
-                            <p>{{ report.message }}</p>
-                        </div>
-                        <br>
-                        <h4>Reporter details</h4>
-                        <hr>
-
-                        {% if report.details %}
-                            <div id="report-details">
-                                <div class="detail-item">
-                                    <p><strong>Name:</strong></p>
-                                    <p>{{ report.details.name }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>First Line Address:</strong></p>
-                                    <p>{{ report.details.first_line_address }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Second Line Address:</strong></p>
-                                    <p>{{ report.details.second_line_address }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Town/City:</strong></p>
-                                    <p>{{ report.details.town_city }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>County:</strong></p>
-                                    <p>{{ report.details.county }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Postcode:</strong></p>
-                                    <p>{{ report.details.postcode }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Country:</strong></p>
-                                    <p>{{ report.details.country }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Phone Number:</strong></p>
-                                    <p>{{ report.details.phone_number }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Person of Trust:</strong></p>
-                                    <p>{{ report.details.person_of_trust }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Person of Trust Phone Number:</strong></p>
-                                    <p>{{ report.details.person_of_trust_phone_number }}</p>
-                                </div>
-                                <div class="detail-item">
-                                    <p><strong>Image/Video URL:</strong></p>
-                                    <p>{{ report.details.image_video_url }}</p>
-                                </div>
-                            </div>
-                        {% else %}
-                            <p class="margin-all">No further details available.</p>
-                        {% endif %}
+            <br>
+            <div class="row">
+                <div class="col">
+                    <!-- WORKER RESPONSE DIV -->
+                    <div>
+                        <h4 class="mb-3">Submit update message</h4>
+                        <form method="post" action="{% url 'report-detail' report.id %}">
+                            {% csrf_token %}
+                            <textarea id="update-message" name="update-message" required></textarea>
+                            <br>
+                            <button type="submit" class="btn reports-btn mt-1">Submit</button>
+                        </form>
+                    </div>
             
-                        <!-- WORKER RESPONSE DIV -->
+                    <!-- PREVIOUS ACTION MESSAGES DIV -->
+                    <br>
+                    <h5>Message history</h5>
+                    <div class="margin-all">
+                        {% if action_messages %}
+                        {% for message in action_messages %}
                         <div>
-                            <form method="post" action="{% url 'report-detail' report.id %}">
-                                {% csrf_token %}
-                                <div class="margin-all">
-                                    <label for="Update">Update:</label>
-                                    <textarea id="update-message" name="update-message" required></textarea>
-                                    <button type="submit" >Submit</button>
-                                </div>
-                            </form>
+                            <p>{{ message.update_message }}</p>
+                            <p><small>~ Posted on {{ message.date_created | date:"H:i Y-m-d" }} by {{ message.worker_user }} </small></p>
                         </div>
-                
-                        <!-- PREVIOUS ACTION MESSAGES DIV -->
-                        <div class="margin-all">
-                            {% if action_messages %}
-                            <h3>Previous messages:</h3>
-                            {% for message in action_messages %}
-                            <div>
-                                <p>{{ message.update_message }}</p>
-                                <p><small>~ Posted on {{ message.date_created | date:"H:i Y-m-d" }} by {{ message.worker_user }} </small></p>
-                            </div>
-                            {% endfor %}
-                            {% else %}
-                            <h3>No previous messages.</h3>
-                            {% endif %}
-                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <p>No previous messages.</p>
+                        {% endif %}
                     </div>
                 </div>
             </div>
+        </div>
     </div>
 </div>
 {% endblock %}

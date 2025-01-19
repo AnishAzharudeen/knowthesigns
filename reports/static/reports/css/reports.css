@@ -25,27 +25,30 @@
 #back-to-reports {
     width: fit-content;
     padding: 0.5em 1em;
+    margin-left: 2em;
 }
 
 #report-detail-container {
     max-width: 80%;
     margin: 2em auto;
-    background: aliceblue;
+    background: rgba(240, 240, 240, 0.527);
     padding: 1em;
+    border-radius: 1%;
+    border: 1px solid rgb(226, 226, 226);
 }
 
 #detail-header {
     font-weight: bold;
     display: flex;
     flex-wrap: wrap;
+    row-gap: 1em;
 }
 
 #detail-date {
     margin-left: auto;
-    row-gap: 1em;
 }
 
-#mark-resolved-btn {
+#mark-resolved-button {
     padding: 0.2em 0.5em;
     font-size: .8em;
 }
@@ -58,6 +61,7 @@
     background-color: white;
     border: 1px solid gray;
     padding: 0.5em;
+    margin: 1em 0;
 }
 
 #report-details {
