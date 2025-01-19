@@ -28,12 +28,12 @@
 <div id="testimonies">
   <div class="grey-bg">
   <div class="header-container3">
-    <h2 id="carousel-stories-heading" class="text-center pt-3 pb-3">Survivor stories</h2>
+    <h2 id="carousel-stories-heading">Survivor stories</h2>
     <div id="story-carousel" class="carousel slide">
         <div class="carousel-inner">
             {% for story in homepage_stories %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                    <div class="carousel-story-container white-bg reason carousel-style pb-5 pt-3">
+                    <div class="carousel-story-container white-bg carousel-style">
                         <h5>{{ story.title }}</h5>
                         <hr>
                         <p>{{ story.content }}</p>
