@@ -126,7 +126,7 @@
  -->
 
 <div id="advice">
-  <div class="header-container3 row pb-5 pt-5">
+  <div class="row p-3 pt-5">
     <div class="reason col-lg-6 col-md">
       <h3 class="text-center">Recognizing Signs</h3>
       <br>
@@ -136,7 +136,7 @@
       <a href="{% url 'advice' %}" class="btn btn-lg btn-info mb-3">Click to learn more</a>
      </div>
     </div>
-    <div class="col-lg-6 col-md justify-content-center align-items-center text-center">
+    <div class="col-lg-6 col-md justify-content-center align-items-center text-center p-0">
       <img src="{% static '/img/home_1.jpg'%}" alt="Human trafficking happens everywhere" class="image-control"
     />
     </div>
@@ -144,12 +144,14 @@
 </div>
 
  <!-- Latest News Section -->
- <div class="row mt-5 bg-munsell">
+ <div class="row mt-5 bg-munsell px-3">
   <h2 class="text-center">Latest News</h2>
   {% for news in latest_news %}
-  <div class="col-md-4 mb-3">
-      <div class="card h-100">
-          <img src="{{ news.image_url }}" class="card-img-top" alt="{{ news.title }}">
+  <div class="col-md-4 mb-3 news-container-mobile">
+      <div class="card h-100 h-md-50">
+          <div class="image-container">
+            <img src="{{ news.image.url }}" class="card-img-top" alt="{{ news.title }}">
+          </div>
           <div class="card-body">
               <h5 class="card-title">{{ news.title }}</h5>
               <p class="card-text">{{ news.description|truncatechars:100 }}</p>
