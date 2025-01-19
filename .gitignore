@@ -11,4 +11,5 @@ venv/
 .vscode
 .gitpod.yml
 .gitpod.dockerfile
+db.sqlite3
 

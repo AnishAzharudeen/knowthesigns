@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container">
+        <!-- REPORT DIV -->
+        <div>
+            <a href="{% url 'view-reports' %}">Back to reports</a>
+
+            <div>
+                <h2>{{ report.date_created }}</h2>
+                <h3>Actioned: {{ report.actioned }}</h3>
+                <!-- Uses JS to resolve/unresolve then reloads page -->
+                <button id="mark-resolved-button">Mark as {% if report.actioned %}un{% endif %}resolved</button>
+                <!-- This <p> is used by JS to display error message -->
+                <p class="hide" id="mark-resolved-error-msg">Something went wrong</p>
+                <div>
+                    <p>{{ report.message }}</p>
+                </div>
+            </div>
+
+            <!-- Not all reports have report details -->
+            {% if report.details %}
+                <div>
+                    <div>
+                        <h3>{{ report.details.name }}</h3>
+                        <p>{{ report.details.first_line_address }}</p>
+                        <p>{{ report.details.second_line_address }}</p>
+                        <p>{{ report.details.town_city }}</p>
+                        <p>{{ report.details.county }}</p>
+                        <p>{{ report.details.postcode }}</p>
+                        <p>{{ report.details.country }}</p>
+                        <p>{{ report.details.phone_number }}</p>
+                        <p>{{ report.details.person_of_trust }}</p>
+                        <p>{{ report.details.person_of_trust_phone_number }}</p>
+                        <p>{{ report.details.image_video_url }}</p>
+                    </div>
+                </div>
+            {% else %}
+                <p>No further details available.</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- WORKER RESPONSE DIV -->
+     <div>
+        <form method="post" action="{% url 'report-detail' report.id %}">
+            {% csrf_token %}
+            <div>
+                <label for="Update">Update:</label>
+                <textarea id="update-message" name="update-message" required></textarea>
+                <button type="submit" >Submit</button>
+            </div>
+        </form>
+     </div>
+
+     <!-- PREVIOUS ACTION MESSAGES DIV -->
+    <div>
+        {% if action_messages %}
+            <h3>Previous messages:</h3>
+            {% for message in action_messages %}
+                <div>
+                    <p>{{ message.update_message }}</p>
+                    <p><small>~ Posted on {{ message.date_created | date:"H:i Y-m-d" }} by {{ message.worker_user }} </small></p>
+                </div>
+            {% endfor %}
+        {% else %}
+            <h3>No previous messages.</h3>
+        {% endif %}
+    </div>
+
+{% endblock %}
+
+{% block extras %}
+    <input type="hidden" id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+    <input type="hidden" id="report-id" name="report-id" value="{{ report.id }}">
+    <script src="{% static 'reports/js/mark-resolved-button.js' %}"></script>
+{% endblock %}
