@@ -37,14 +37,19 @@
 #detail-header {
     font-weight: bold;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #detail-date {
     margin-left: auto;
+    row-gap: 1em;
 }
 
 #mark-resolved-btn {
-    margin-left: 1em;
     padding: 0.2em 0.5em;
     font-size: .8em;
+}
+
+#pending-text {
+    margin-right: 1em;
 }
