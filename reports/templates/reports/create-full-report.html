@@ -6,7 +6,7 @@
 
 {% block report_form %}
     <form action="{% url 'create-full-report' %}" method="post" class="form full-form">
-        {% csrf_token %} 
+        {% csrf_token %}
 
         <div class="form-group row">
             <label class="col-form-label">{{ report_message_form.message.label_tag }}</label>
@@ -23,7 +23,13 @@
                 </div>
             </div>
         {% endfor %}
-        
-        <button type="submit" class="btn" id="add-details-button">Create report</button>
+        <div class="form-group row text-center">
+            <div class="col-6">
+        <button type="submit" class="btn btn-success">Create report</button>
+            </div>
+            <div class="col-6">
+                <a href="{% url 'home' %}" class="btn btn-info">Back Home</a>
+            </div>
+        </div>
     </form>
 {% endblock %}
