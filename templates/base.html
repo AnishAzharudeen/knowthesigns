@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="{% static 'css/index.css'%}">
     <link rel="stylesheet" href="{% static 'css/news.css'%}">
 
+    {% block additional_css %}
+    {% endblock %}
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
 
