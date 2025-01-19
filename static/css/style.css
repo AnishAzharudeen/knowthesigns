@@ -230,6 +230,7 @@ h1, h2, h3, p {
 .nav-link {
     color: white!important;
     position: relative;
+    z-index: 10;
 }
 
 .nav-link:hover {
