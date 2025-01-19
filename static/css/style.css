@@ -2,13 +2,10 @@
 
 /*main tags rules*/
 
-
-
 h1, h2, h3, p {
     padding: 0;
     margin: 0;
 }
-
 
 /* General styles */
 
@@ -227,4 +224,46 @@ h1, h2, h3, p {
     .nav-link:hover::before {
         width: 15%;
     }
+}
+
+/* Homepage carousel */
+#carousel-stories-heading {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.carousel-seperator {
+    max-width: 60%;
+    margin: auto;
+}
+
+.carousel-item {
+    height: 20em;
+}
+
+.carousel-story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.carousel-arrows {
+    width: 64px;
+}
+
+.carousel-arrows:not(:hover){
+    opacity: 0.5;
+}
+
+#read-more-stories-link {
+    text-decoration: none;
+    color:black;
+    margin: 1em;
+    display: inline-block;
+    font-weight: bold;
 }
