@@ -195,9 +195,10 @@ p {
 
 .full-form {
     margin: 15px;
-    border: 1px solid #313638;
-    border-radius: 5px;
-    background-color: #F5F1E3;
+}
+
+.login-form .form-group label {
+    padding-left: 0;
 }
 
 .form-group {
@@ -356,6 +357,11 @@ p {
 
 .login-form {
     max-width: fit-content;
+    margin: auto;
+}
+
+.login-form .form-group {
+    margin: 2em 0;
 }
 
 .page-wrapper {
