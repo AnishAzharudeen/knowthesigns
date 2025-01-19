@@ -1,8 +1,9 @@
 
 {% extends "base.html" %} {% load static %} {% block content %}
 
-<div class="col-10 offset-1 col-md-8 offset-md-2">
-  <h2 class="text-center">Why are survivor testimonies so important?</h2>
+<div class="container">
+<div class="col">
+  <h2 class="text-center pt-4">Why are survivor testimonies so important?</h2>
   <br />
   <h6>
     Survivor testimonies provide invaluable insights into the realities of human
@@ -13,7 +14,7 @@
   <br />
 </div>
 <!-- I would like some kind of border around the 4 pillars, possibly with hover effects -->
-<div class="col-10 offset-1">
+<div class="col">
   <div class="row row-cols-1 row-cols-md-2">
     <p class="reason">
       1: Awareness and Education: Survivor accounts educate the public about the
@@ -43,14 +44,14 @@
   <hr />
 </div>
 <br />
-<div class="col-10 offset-1 col-md-8 offset-md-2">
+<div class="col">
   <h4 class="text-center">
     The following testimonies will show you first hand how such experiences will
     affect humans:
   </h4>
 </div>
 <br>
-<div class="col-10 offset-1">
+<div class="col">
   <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mg-btm">
     {% for story in stories %}
 
@@ -73,6 +74,7 @@
     </div>
     {% endfor %}
   </div>
+</div>
 
   <!-- {% if is_paginated %}
 
