@@ -41,3 +41,7 @@
     min-height: 70vh;
     height: fit-content;
 }
+
+.image-control{
+    width: 500px;
+}
