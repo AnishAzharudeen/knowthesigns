@@ -1,26 +1,47 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block additional_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'reports/css/reports.css' %}" />
+{% endblock %}
 
 {% block content %}
 <div class="container">
+    <a href="{% url 'worker-logout' %}" class="btn btn-info mt-4">Logout</a>
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-5 pt-5">
-    {% for report in reports %}
-
-        <div class="container">
-            <!-- Passes report id to the report detail view -->
-            <a href="{% url 'report-detail' report.id %}" class="links margin-all">
-                <div class="card-post card-body d-flex flex-column testemony">
-                    <h2 class="card-title">{{ report.date_created }}</h2>
-                    <h3 class="card-text">Read: {{ report.read }}</h3>
-                    <h3 class="card-text">Actioned: {{ report.actioned }}</h3>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-1">
+        {% for report in reports %}
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
                     <div>
-                        <p class="card-text">{{ report.message }}</p>
+                        {% if report.read %}
+                            <img src="{% static 'img/read-mail.svg' %}" width="16" alt="read icon">
+
+                            {% if report.actioned %}
+                                <img src="{% static 'img/tick.svg' %}" width="16" alt="actioned icon">
+                                <small>Resolved</small>
+                            {% else %}
+                                <img src="{% static 'img/pending.svg' %}" width="16" alt="not actioned icon">
+                                <small>Pending</small>
+                            {% endif %}
+                        {% else %}
+                            <img src="{% static 'img/unread-mail.svg' %}" width="16" alt="unread icon">
+                            <small>Unopened</small>
+                        {% endif %}
                     </div>
+
+                    <span class="card-date">{{ report.date_created | date:'Y-m-d H:i' }}</span>
                 </div>
-            </a>
+                <div class="card-body">
+                    <p class="card-text">{{ report.message }}</p>
+                    <a href="{% url 'report-detail' report.id %}" class="btn reports-btn">Open report</a>
+                </div>
+            </div>
         </div>
-    {% endfor %}
-</div>
+
+        {% endfor %}
+    </div>
 </div>
 
 {% endblock %}

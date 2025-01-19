@@ -350,6 +350,10 @@ These future features aim to create a more comprehensive and interactive learnin
 
 * [Right story carousel arrow](https://www.svgrepo.com/svg/334215/right-arrow)
 * [Left story carousel arrow](https://www.svgrepo.com/svg/334036/left-arrow)
+* [View report tick/actioned](https://www.svgrepo.com/svg/526398/unread)
+* [View report pending icon](https://www.svgrepo.com/vectors/pending/)
+* [View report read icon](https://www.svgrepo.com/svg/510160/read-mail)
+* [View report unread icon](https://www.flaticon.com/free-icon/unread-message_7249301)
 =======
 - We would also like to express our gratitude to our amazing team for their hard work, dedication, and collaboration in bringing "Know the signs" to life.
 
