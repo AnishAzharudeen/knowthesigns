@@ -237,16 +237,12 @@ h1, h2, h3, p {
     margin: auto;
 }
 
-.carousel-item {
-    height: 20em;
-}
-
 .carousel-story-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 20em;
     text-align: center;
     width: 60%;
     margin: auto;
@@ -254,6 +250,11 @@ h1, h2, h3, p {
 
 .carousel-arrows {
     width: 64px;
+    max-width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+   max-width: 15%;
 }
 
 .carousel-control-next:not(:hover), .carousel-control-prev:not(:hover){
