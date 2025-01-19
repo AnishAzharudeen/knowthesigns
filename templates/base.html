@@ -2,9 +2,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta name="description"
-    content="A webpage for reporting and getting information about human exploitation, as well as to showcase the importance of National Slavery and Human Trafficking Prevention Month.">
+        content="A webpage for reporting and getting information about human exploitation, as well as to showcase the importance of National Slavery and Human Trafficking Prevention Month.">
     <meta name="keywords" content="slavery, human, trafficking, hackathon, prevention, report">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,77 +22,73 @@
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
 
     <!-- SEO meta -->
-    <meta name="description" content="An initiative dedicated to preventing human trafficking and modern slavery through awareness, education, and actionable resources. Join the fight to protect human rights and restore freedom.">
-    <meta name="keywords" content="Human Trafficking, Slavery Prevention, Modern Slavery, Human Rights, Anti-Trafficking, Awareness, Education, Freedom, Social Justice">
+    <meta name="description"
+        content="An initiative dedicated to preventing human trafficking and modern slavery through awareness, education, and actionable resources. Join the fight to protect human rights and restore freedom.">
+    <meta name="keywords"
+        content="Human Trafficking, Slavery Prevention, Modern Slavery, Human Rights, Anti-Trafficking, Awareness, Education, Freedom, Social Justice">
 
     <title>Hope Unbound</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div>
-    <div class="bg-head bg-logo-icon">
-        
-        <div id="nav-logo"></div>
-      <h1 class="onyx text-center main-title">
-        Human Trafficing and Slavery Prevention
-      </h1>
-    </div>
-      <nav class="navbar navbar-expand-sm  bg-dark  border-body" data-bs-theme="dark" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" href="/">Home</a>
-              <a class="nav-link" href="{% url 'stories' %}">Testimonies</a>
-              <a class="nav-link" href="{% url 'advice' %}">Signs of Exploitation</a>
-              <a class="nav-link" href="{% url 'news' %}">News</a>
-              <a class="nav-link" href="{% url 'create-full-report' %}">Report an Activity</a>
-              <a class="nav-link staff-nav" href="{% url 'worker-login' %}">Staff</a>
-            </div>
-          </div>
+        <div class="bg-head bg-logo-icon">
+
+            <div id="nav-logo"></div>
+            <h1 class="onyx text-center main-title">
+                Human Trafficing and Slavery Prevention
+            </h1>
         </div>
-      </nav>
+        <nav class="navbar navbar-expand-sm  bg-dark  border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" href="/">Home</a>
+                        <a class="nav-link" href="{% url 'stories' %}">Testimonies</a>
+                        <a class="nav-link" href="{% url 'advice' %}">Signs of Exploitation</a>
+                        <a class="nav-link" href="{% url 'news' %}">News</a>
+                        <a class="nav-link" href="{% url 'create-full-report' %}">Report an Activity</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </div>
 
-      <!-- Django messages -->
-      <div class="container">
+    <!-- Django messages -->
+    <div class="container">
         <div class="row">
-          <div class="text-end">
-            {% for message in messages %}
-            <div class="alert {{ message.tags }}" id="msg" role="alert">
-              {{ message | safe }}
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="text-end">
+                {% for message in messages %}
+                <div class="alert {{ message.tags }}" id="msg" role="alert">
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-          </div>
         </div>
-      </div>
-      {% block content %}
+    </div>
+    {% block content %}
 
-      <!-- Content Goes here -->
-      {% endblock content %}
+    <!-- Content Goes here -->
+    {% endblock content %}
     </main>
     <!-- Footer -->
-    <footer class="footer mt-5 py-3">
-      <p class="m-0 text-center">
-        {% block copyright %} Copyright 2025 Our Team {% endblock copyright %}
-      </p>
-      <p class="m-0 text-center">
-        Follow us:
-        <a href="#" target="_blank" class="link"
-          ><i class="fab fa-facebook-square ms-3"></i
-        ></a>
-        <a href="#" target="_blank" class="link"
-          ><i class="fab fa-instagram-square ms-3"></i
-        ></a>
-        <a href="#" target="_blank" class="link"
-          ><i class="fab fa-brands fa-linkedin ms-3"></i
-        ></a>
-      </p>
+    <footer class="footer mt-3 py-3">
+        <p class="m-0 text-center">
+            {% block copyright %} Copyright 2025 Our Team {% endblock copyright %}
+        </p>
+        <p class="pt-2 m-0 text-center">
+            <a href="{% url 'worker-login' %}" id="staff-login-link">Staff login</a>
+        </p>
     </footer>
 
     {% block extras %}{% endblock %}
-  </body>
+</body>
+
 </html>
