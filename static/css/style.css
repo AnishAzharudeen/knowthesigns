@@ -327,3 +327,7 @@ h1, h2, h3, p {
     justify-content: center;
     align-items: center;
 }
+
+.margin-all {
+    margin: 15px;
+}
