@@ -155,6 +155,9 @@ p {
     padding: 10px;
 }
 
+#testimonies {
+    background-color: rgb(247, 247, 247);
+}
 
 /* Advice */
 
@@ -346,6 +349,7 @@ p {
     margin: 1em;
     display: inline-block;
     font-weight: bold;
+    border: 1px solid #bbbbbb;
 }
 
 /* Workers */
