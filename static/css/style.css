@@ -241,6 +241,12 @@ h1, h2, h3, p {
     width: 100%;
 }
 
+.staff-nav {
+    float: right;
+    margin-left: 30px;
+
+}
+
 @media (max-width:990px){
 
     .nav-link:hover::before {
@@ -298,4 +304,21 @@ h1, h2, h3, p {
     margin: 1em;
     display: inline-block;
     font-weight: bold;
+}
+
+/* Workers */
+
+.login-form {
+    max-width: fit-content;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
 }
