@@ -16,6 +16,20 @@ h1, h2, h3, p {
     background-color: #F5F1E3 !important;
 }
 
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    text-decoration: none;
+}
+
+.btn-placement {
+    display: flex;
+    justify-content: center;
+}
+
 /* Buttons */
 
 .btn-edit {
@@ -37,7 +51,7 @@ h1, h2, h3, p {
 
 .main-title{
     font-size: 35px;
-   
+
 }
 
 .background {
@@ -71,7 +85,7 @@ h1, h2, h3, p {
     background-position: center center;
     z-index: 1;
     opacity: 0.5;
-   
+
   }
 
   @media (max-width:768px){
@@ -87,7 +101,7 @@ h1, h2, h3, p {
         background-position: center center;
         z-index: 1;
         opacity: 0.5;
-       
+
       }
 
   }

@@ -16,11 +16,23 @@
     margin-left: 10vw;
 }
 
+.header-container3{
+    min-height: 20vh;
+    max-width: 80vw;
+    margin-left: 10vw;
+}
+
 .grey-bg {
     background-color: #9c9c9ce3 !important;
 }
 
-.header-container3{
+.white-bg {
+    background-color: #FFF;
+    border: 1px solid #313638;
+    border-radius: 5px;
+}
+
+.header-container4{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/testemonies_head.jpg")!important;
     background-repeat: no-repeat;
     background-size:cover;

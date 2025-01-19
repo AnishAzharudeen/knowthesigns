@@ -37,7 +37,8 @@
           </div>
         </div>
       </div>
-      {% endfor %} {% else %}
+      {% endfor %}
+      {% else %}
       <div class="col pt-3">
         <div class="card h-100 reason">
           <div class="text-center pt-2 sign-heading">
@@ -99,7 +100,28 @@
       </div>
       {% endif %}
     </div>
+    <div>
+      <a href="{% url 'stories' %}" class="btn btn-lg btn-info mt-3 mb-3">Click here to see more survivor stories</a>
+    </div>
   </div>
 </div>
-<div class="header-container3" id="assessment"></div>
+
+<div id="advice" class="grey-bg">
+  <div class="header-container3 pb-3">
+    <a href="{% url 'advice' %}" class="links">
+    <div class="reason white-bg">
+    <h3 class="text-center">Recognizing Signs</h3>
+    <br>
+    <p>Human trafficking and modern slavery are global issues affecting millions. Recognizing potential victims is crucial. Key signs include restricted movement, physical abuse, lack of personal documents, fearful behavior, excessive work hours, and poor living conditions. If you suspect someone is being trafficked or enslaved, it's important to act.</p>
+    <br>
+    <div class="btn-placement">
+    <p class="btn btn-lg btn-info mb-3">Click to learn more</p>
+  </div>
+    </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="header-container4" id="assessment"></div>
 {% endblock %}
