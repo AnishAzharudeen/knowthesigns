@@ -25,24 +25,29 @@
     </div>
 </div>
 
-<div id="testimonies" class="grey-bg">
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+<div id="testimonies">
+    <div id="story-carousel" class="carousel slide">
         <div class="carousel-inner">
             {% for story in homepage_stories %}
                 <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                    <div class="d-block w-100 p-4">
+                    <div class="carousel-story-container">
                         <h5>{{ story.title }}</h5>
+                        <hr>
                         <p>{{ story.content }}</p>
                     </div>
                 </div>
             {% endfor %}
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#story-carousel" data-bs-slide="prev">
+            <span aria-hidden="true">
+                <img class="carousel-arrows" src="{% static 'img/left-arrow-story-carousel.svg' %}" alt="Previous">
+            </span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <button class="carousel-control-next" type="button" data-bs-target="#story-carousel" data-bs-slide="next">
+            <span aria-hidden="true">
+                <img class="carousel-arrows" src="{% static 'img/right-arrow-story-carousel.svg' %}" alt="Next">
+            </span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
@@ -55,7 +60,7 @@
     <script>
         var myCarousel = document.querySelector('#carouselExampleControls');
         var carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 2000,
+            interval: false,
             wrap: true
         });
     </script>
