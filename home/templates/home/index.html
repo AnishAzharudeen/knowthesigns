@@ -144,12 +144,14 @@
 </div>
 
  <!-- Latest News Section -->
- <div class="row mt-5 bg-munsell">
+ <div class="row mt-5 bg-munsell px-3">
   <h2 class="text-center">Latest News</h2>
   {% for news in latest_news %}
   <div class="col-md-4 mb-3 news-container-mobile">
       <div class="card h-100 h-md-50">
-          <img src="{{ news.image.url }}" class="card-img-top" alt="{{ news.title }}">
+          <div class="image-container">
+            <img src="{{ news.image.url }}" class="card-img-top" alt="{{ news.title }}">
+          </div>
           <div class="card-body">
               <h5 class="card-title">{{ news.title }}</h5>
               <p class="card-text">{{ news.description|truncatechars:100 }}</p>
