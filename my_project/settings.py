@@ -16,6 +16,7 @@ import sys
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
+import dj_database_url
 
 if os.path.isfile("env.py"):
     import env
@@ -32,7 +33,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = (os.environ.get("SECRET_KEY"))
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG", False)
+DEBUG = os.environ.get("DEBUG", False) == "True"
+
+# This is set to false in production, default is True to ensure production isn't affected
+DEVELOPMENT = os.environ.get("DEVELOPMENT", "True")
 
 ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
 
@@ -96,16 +100,23 @@ TEMPLATES = [
 WSGI_APPLICATION = "my_project.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+if DEVELOPMENT == "True":
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
     }
-}
-
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": os.environ.get("AWS_DB_NAME"),
+            "USER": os.environ.get("AWS_USER"),
+            "PASSWORD": os.environ.get("AWS_PASSWORD"),
+            "HOST": os.environ.get("AWS_HOST"),
+        }
+    }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -136,6 +147,8 @@ TIME_ZONE = "UTC"
 USE_I18N = True
 
 USE_TZ = True
+
+LOGIN_URL = "/reports/worker-login/"
 
 
 # Static files (CSS, JavaScript, Images)

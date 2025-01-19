@@ -12,6 +12,10 @@ p {
     background-color: #DDDBCB !important;
 }
 
+.hide { 
+    display: none;
+}
+
 /* Testeminies */
 
 .reason {
@@ -62,7 +66,7 @@ p {
     width: 80%;
   }
 
-  button[type="submit"] {
+  #add-details-button {
     float: right;
     margin-right: 15px;
   }

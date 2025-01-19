@@ -1,10 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Report(models.Model):
     '''Model for creating a report that contains the user's message.'''
     message = models.TextField(null=False, blank=False)
-    date_posted = models.DateTimeField(auto_now_add=True)
+    date_created = models.DateTimeField(auto_now_add=True)
     read = models.BooleanField(default=False)
     actioned = models.BooleanField(default=False)
     actioned_date = models.DateTimeField(null=True)
@@ -12,8 +13,9 @@ class Report(models.Model):
 
 class ReportDetails(models.Model):
     '''Model for report details to be added to a report.'''
+    report = models.OneToOneField(Report, related_name="details",
+                                  on_delete=models.CASCADE)
     name = models.CharField(max_length=50, null=True, blank=True)
-    report = models.ForeignKey(Report, on_delete=models.CASCADE)
     first_line_address = models.CharField(max_length=100,
                                           null=True,
                                           blank=True)
@@ -30,3 +32,12 @@ class ReportDetails(models.Model):
                                                     null=True,
                                                     blank=True)
     image_video_url = models.URLField(null=True, blank=True)
+
+
+class ActionMessage(models.Model):
+    '''Model for action messages to be added to a report by workers.'''
+    report = models.ForeignKey(Report, related_name="action_messages",
+                               on_delete=models.CASCADE)
+    worker_user = models.ForeignKey(User, on_delete=models.CASCADE)
+    update_message = models.TextField(null=False, blank=False)
+    date_created = models.DateTimeField(auto_now_add=True)
