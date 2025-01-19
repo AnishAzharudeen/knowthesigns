@@ -53,3 +53,24 @@
 #pending-text {
     margin-right: 1em;
 }
+
+#report-message {
+    background-color: white;
+    border: 1px solid gray;
+    padding: 0.5em;
+}
+
+#report-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item {
+    display: flex;
+    margin-bottom: 0.2em;
+    flex-wrap: wrap;
+}
+
+.detail-item > p:first-child {
+    margin-right: auto;
+}
