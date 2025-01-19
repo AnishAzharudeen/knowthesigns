@@ -28,7 +28,8 @@ def add_report_details(request):
 
     # If user got here without creating a report, return a forbidden response
     if not report_id:
-        return HttpResponseForbidden('You have not created a report.')
+        messages.error(request, 'You have not created a report.')
+        return redirect('create-full-report')
 
     report = Report.objects.get(pk=report_id)
 
@@ -45,7 +46,20 @@ def add_report_details(request):
         'report': report,
         'report_details_form': ReportDetailsForm,
     }
+
     return render(request, 'reports/add-report-details.html', context)
+
+
+def create_full_report(request):
+    context = {
+        'report_message_form': ReportForm,
+        'report_details_form': ReportDetailsForm,
+    }
+
+    return render(request, 'reports/add-report-details.html', context)
+
+
+# Worker views
 
 
 def worker_login_page(request):
