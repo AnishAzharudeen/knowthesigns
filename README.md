@@ -179,23 +179,22 @@ The site has been built with the following tech, tools and libraries
     
 
   ### Deployment to Heroku involved the following steps and changes:
-   1. Set up DEBUG in settins.py to False
-   2. install gunicorn ==22.0.0
-   3. Create a Procfile (web: gunicorn core.wsgi:application) 
-   4. Create a runtime.txt file and add the following: Python-3.12.3
-   5. Terminate all servers.
-       * Ensure DEBUG and DEV in env.py are commented out
-       * python3 manage.py runserver
-   6. Check project is displaying in the preview on port 8000 or gitpod
-   7. Log into your Heroku account, create a new app, and access the dashboard for your application
-   8. Go to Settings and open the Config Vars add all the Api keys in your env.py
+   1. Install gunicorn and psycopg2 then freeze requirements to requirements.txt.
+   2. Create a Procfile (web: gunicorn core.wsgi:application).
+   3. Log into your Heroku account, create a new app, and access the dashboard for your application.
+   4. Go to Settings and open the Config Vars add all the Api keys in your env.py
        * Add CLOUDINARY_KEY (the Cloudinary API key)
        * Add SECRET_KEY - (the unique password)
-       * Add DATABASE_URL - (postgres ElephantSQL API key)
        * Add STRIPE_SECRET_KEY - (stripe payments Api key)
-   9. Ensure your application has an ALLOWED_HOST your '.herokuapp.com' - '.gitpod.io'
-   10. Ensure in Resources in heroku dasboard change your dinos active.
-   11. Go to the Deploy tab, connect the project to GitHub, and choose main branch to deploy
+       * AWS_DB_NAME - AWS database name
+       * AWS_HOST - AWS url
+       * AWS_PASSWORD
+       * AWS_USER
+       * DEVELOPMENT - Set to "False", to use AWS instead of local database
+       * SECRET_KEY - Contains your Django secret key for encryption
+   5. Ensure your application has an ALLOWED_HOST your '.herokuapp.com'
+   6.  Ensure in Resources in heroku dasboard change your dinos active.
+   7.  Go to the Deploy tab, connect the project to GitHub, and choose main branch to deploy
        * Click Deploy Branch (manually)
        * (Optional) Select Enable Automatic Deploys
 
