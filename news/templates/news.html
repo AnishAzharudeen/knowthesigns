@@ -5,19 +5,19 @@
 <div class="container my-2">
     <h1 class="text-center">Latest News</h1>
     <div class="row">
-        {% for article in page_obj %}
+        {% for news in page_obj %}
         <div class="col-md-6 col-lg-4 col-sm-12 mb-4">
             <div class="card h-100">
                 <div class="image-container">
-                    <img src="{{ article.urlToImage }}" class="card-img-top" alt="News Image" onerror="this.src='https://via.placeholder.com/150';">
+                    <img src="{{ news.image.url }}" class="card-img-top" alt="News Image"/>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">{{ article.title }}</h5>
-                    <p class="card-text">{{ article.description|truncatechars:100 }}</p>
+                    <h5 class="card-title">{{ news.title }}</h5>
+                    <p class="card-text">{{ news.description|truncatechars:100 }}</p>
                    
                 </div>
                 <div>
-                    <a href="{{ article.url }}" class="btn btn-primary mb-2 ms-2" target="_blank">Read More</a>
+                    <a href="{{ news.link }}" class="btn btn-primary mb-2 ms-2" target="_blank">Read More</a>
                 </div>
             </div>
         </div>
@@ -31,21 +31,15 @@
                 <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
             </li>
             {% endif %}
-    
-            {% for page_num in page_obj.paginator.page_range %}
-                {% if page_num >= page_obj.number|add:"-1" and page_num <= page_obj.number|add:"1" %}
-                    {% if page_num == page_obj.number %}
-                    <li class="page-item active">
-                        <span class="page-link">{{ page_num }}</span>
-                    </li>
-                    {% else %}
-                    <li class="page-item">
-                        <a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a>
-                    </li>
-                    {% endif %}
+
+            {% for num in page_obj.paginator.page_range %}
+                {% if page_obj.number == num %}
+                <li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                {% elif num > page_obj.number|add:-3 and num < page_obj.number|add:3 %}
+                <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
                 {% endif %}
             {% endfor %}
-    
+
             {% if page_obj.has_next %}
             <li class="page-item">
                 <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>

@@ -269,4 +269,33 @@ These future features aim to create a more comprehensive and interactive learnin
 - Special thanks to the instructors and mentors - ****, ****, and **** for their invaluable guidance and support throughout the process.
 
 
+**So….?**
+
+We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+
+**Can I opt out?**
+
+Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+
+```
+pkill uptime.sh
+rm .vscode/uptime.sh
+```
+
+**Anything more?**
+
+Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+
+---
+
+Happy coding!
+
+## Credit
+
+### Images
+
+* [Right story carousel arrow](https://www.svgrepo.com/svg/334215/right-arrow)
+* [Left story carousel arrow](https://www.svgrepo.com/svg/334036/left-arrow)
+=======
 - We would also like to express our gratitude to our amazing team for their hard work, dedication, and collaboration in bringing "Know the signs" to life.
+

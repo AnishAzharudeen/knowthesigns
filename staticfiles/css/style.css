@@ -1,15 +1,30 @@
+
+
 /*main tags rules*/
 
-p {
+h1, h2, h3, p {
     padding: 0;
     margin: 0;
 }
-
 
 /* General styles */
 
 .bg-head {
     background-color: #F5F1E3 !important;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    text-decoration: none;
+}
+
+.btn-placement {
+    display: flex;
+    justify-content: center;
 }
 
 /* Buttons */
@@ -29,7 +44,16 @@ p {
     width: auto;
 }
 
+.carousel-style {
+    max-width: 70vw;
+}
+
 /* Home Page */
+
+.main-title{
+    font-size: 35px;
+
+}
 
 .background {
     border: 1px solid #1B9AAA;
@@ -49,6 +73,40 @@ p {
     display: none;
 }
 
+.main-title::before  {
+    position: absolute;
+    content: "";
+    width: 25%;
+    height: 25%;
+    left: 10%;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../img/icon_2.png")!important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 1;
+    opacity: 0.5;
+
+  }
+
+  @media (max-width:768px){
+    .main-title::before  {
+        position: absolute;
+        content: "";
+        width: 20%;
+        height: 20%;
+        top: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url("../img/icon_2.png")!important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        z-index: 1;
+        opacity: 0.5;
+
+      }
+
+  }
+
 /* Testeminies */
 
 .reason {
@@ -59,6 +117,7 @@ p {
     border: 1px solid #313638;
     border-radius: 5px;
     background-color: #F5F1E3;
+    padding: 20px;
 }
 
 /* Advice */
@@ -146,6 +205,10 @@ p {
     color: #FFFFFF;
 }
 
+.bg-onix{
+    background-color: #313638!important;
+}
+
 /*Nav bar elements*/
 
 .nav-link {
@@ -179,4 +242,56 @@ p {
     .nav-link:hover::before {
         width: 15%;
     }
+}
+
+/* Homepage carousel */
+#story-carousel {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#carousel-stories-heading {
+    text-align: center;
+    padding-top: 1em;
+}
+
+/* .carousel-seperator {
+    max-width: 60%;
+    margin: auto;
+} */
+
+.carousel-item {
+    height: 15em;
+}
+
+.carousel-story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 10em;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.carousel-arrows {
+    width: 64px;
+    max-width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+   max-width: 15%;
+}
+
+.carousel-control-next:not(:hover), .carousel-control-prev:not(:hover){
+    opacity: 0.5;
+}
+
+#read-more-stories-link {
+    text-decoration: none;
+    color:black;
+    margin: 1em;
+    display: inline-block;
+    font-weight: bold;
 }
