@@ -192,7 +192,7 @@ The site has been built with the following tech, tools and libraries
        * AWS_USER
        * DEVELOPMENT - Set to "False", to use AWS instead of local database
        * SECRET_KEY - Contains your Django secret key for encryption
-   5. Ensure your application has an ALLOWED_HOST your '.herokuapp.com'
+       * ALLOWED_HOST - Ensure you add the url here. This will allow your application to run on the domain.
    6.  Ensure in Resources in heroku dasboard change your dinos active.
    7.  Go to the Deploy tab, connect the project to GitHub, and choose main branch to deploy
        * Click Deploy Branch (manually)
