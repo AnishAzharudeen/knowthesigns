@@ -52,7 +52,6 @@ def add_report_details(request):
 
 def create_full_report(request):
     '''Returns page to create a report and create report details.'''
-    print("create_full_report")
     if request.method == 'POST':
         form = ReportForm(request.POST)
         form_details = ReportDetailsForm(request.POST)
@@ -69,7 +68,7 @@ def create_full_report(request):
         'report_details_form': ReportDetailsForm,
     }
 
-    return render(request, 'reports/add-report-details.html', context)
+    return render(request, 'reports/create-full-report.html', context)
 
 
 # Worker views
