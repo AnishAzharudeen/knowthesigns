@@ -129,3 +129,10 @@ Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` f
 ---
 
 Happy coding!
+
+## Credit
+
+### Images
+
+* [Right story carousel arrow](https://www.svgrepo.com/svg/334215/right-arrow)
+* [Left story carousel arrow](https://www.svgrepo.com/svg/334036/left-arrow)
