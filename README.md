@@ -6,37 +6,34 @@ here we neeed to add a description
 * [Link to Deployed Project](https://knowthe-signs-e02e6c0640d7.herokuapp.com/)
 
 ## CONTENTS
-* [USER EXPERIENCE (UX)](#user-experience)
-  * [Purpose & target audience](#purpose-and-target-audience)
-  * [Goals](#goals)
-  * [E-commerce business model](#e-commerce-business-model-documentation)
-  * [Marketing strategy](#marketing-strategy)
-* [PROJECT DESIGN](#project-design)
-  * [Wireframes](#wireframes)
-  * [User Stories](#user-stories)
-  * [Logic](#logic)
-  * [Color Scheme](#color-scheme)
-  * [Imagery](#imagery)
-  * [Typography](#typography)
-  * [MVP](#mvp-minimun-vialble-product)
-* [FEATURES](#features)
-* [VALIDATION](#validation)
-* [TECH STACK](#tech-stack)
-  * [Languages and Frameworks](#languages-and-frameworks)
-  * [Tools and Libraries](#tools-and-libraries)
-* [TESTING](#testing)
-  * [Tests performed](#tests-performed)
-  * [User Story Tests](#user-story-tests)
-  * [Bugs resolved](#bugs-resolved)
-  * [Unresolved bugs](#unresolved-bugs)
-  * [Improvements & future developments](#improvements-and-future-developments)
-* [DEPLOYMENT](#deployment)
-* [FORKING & CLONING INSTRUCTIONS](#forking-and-cloning-instructions)
-* [SECURITY SETTINGS](#security-settings)
-* [CREDITS](#credits)
-  * [Resources](#resources)
-  * [Content](#content)
-  * [Media](#media)
+- [Project Name - Know the signs](#project-name---know-the-signs)
+  - [CONTENTS](#contents)
+  - [PROJECT DESIGN](#project-design)
+    - [Wireframes](#wireframes)
+    - [Logic](#logic)
+    - [Color Scheme](#color-scheme)
+    - [Imagery](#imagery)
+    - [Typography](#typography)
+  - [Tech. stack](#tech-stack)
+    - [Languages and frameworks](#languages-and-frameworks)
+  - [Hosting platforms](#hosting-platforms)
+  - [Packages](#packages)
+    - [Tools and Libraries](#tools-and-libraries)
+  - [DEPLOYMENT](#deployment)
+    - [Deployment to Heroku involved the following steps and changes:](#deployment-to-heroku-involved-the-following-steps-and-changes)
+  - [FORKING AND CLONING INSTRUCTIONS](#forking-and-cloning-instructions)
+    - [Here's a step-by-step guide to forking:](#heres-a-step-by-step-guide-to-forking)
+    - [Here's a step-by-step guide to cloning:](#heres-a-step-by-step-guide-to-cloning)
+    - [Resources](#resources)
+    - [Media](#media)
+    - [Credits](#credits)
+    - [Content References](#content-references)
+      - [Copilot](#copilot)
+      - [Educational sites](#educational-sites)
+  - [Future features](#future-features)
+  - [Acknowledgement](#acknowledgement)
+  - [Credit](#credit)
+    - [Images](#images)
   
 
 ## PROJECT DESIGN
@@ -99,26 +96,31 @@ here we neeed to add a description
    
 
 
-## TECH STACK
+## Tech. stack
 The site has been built with the following tech, tools and libraries
 
-### Languages and Frameworks
+### Languages and frameworks
 
 * HTML5
-* CSS
+* CSS3
 * JavaScript
+* JQuery
 * Python
-* Jquery
-* Django - web framework
-* Django AllAuth - user authentication
-* Psycopg2 - postgreSQL adapter for python
-* ElephantSQL - database hosting
-* Cloudinary - media hosting
+* Django
 * Pillow - python image processing library
+* Bootstrap 5 - frontend responsive styling framework
+
+## Hosting platforms
+* AWS - Host SQL database
+* Cloudinary - Host images/videos
+* Heroku - Host Django website
+* Git - Host repository and project booard
+
+## Packages
+* Psycopg2 - postgreSQL adapter for python
 * Gunicorn - WSGI HTTP server for UNIX
-* Bootstrap 5 and react-bootsrap - frontend responsive styling framework
-* Fontawesom icons
-* Heroku - live site hosting
+* Django AllAuth - user authentication
+* Django crispy forms - Bootstrap form styling 
 
 
 ### Tools and Libraries
