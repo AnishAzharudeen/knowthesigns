@@ -1,6 +1,10 @@
 
 
 /*main tags rules*/
+html, body {
+    width: 100%;
+    overflow-x:hidden;
+}
 
 h1, h2, h3, p {
     padding: 0;
@@ -40,8 +44,16 @@ h1, h2, h3, p {
 /* Images */
 
 .image-high {
-    max-height: 50vh;
+    max-height: 70vh;
     width: auto;
+}
+
+@media (max-width:480px){
+    .image-high {
+        max-height: 50vh;
+        width: auto;
+    }
+
 }
 
 .carousel-style {
@@ -124,6 +136,8 @@ h1, h2, h3, p {
 
 .sign-heading {
     text-decoration: underline;
+    text-decoration-color:#126a75 ;
+    text-underline-offset: 8px;
     padding-left: 10px;
 }
 
@@ -265,13 +279,9 @@ h1, h2, h3, p {
     padding-top: 1em;
 }
 
-/* .carousel-seperator {
+.carousel-seperator {
     max-width: 60%;
     margin: auto;
-} */
-
-.carousel-item {
-    height: 15em;
 }
 
 .carousel-story-container {
@@ -279,10 +289,10 @@ h1, h2, h3, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 10em;
+    min-height: 15em;
     text-align: center;
     width: 70%;
-    margin: auto;
+    margin: 1em auto;
 }
 
 .carousel-arrows {
@@ -316,9 +326,4 @@ h1, h2, h3, p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.container {
-    width: 100%;
-    max-width: 400px;
 }
