@@ -33,6 +33,14 @@ h1, h2, h3, p {
     width: auto;
 }
 
+@media (max-width:480px){
+    .image-high {
+        max-height: 50vh;
+        width: auto;
+    }
+    
+}
+
 /* Home Page */
 
 .main-title{
