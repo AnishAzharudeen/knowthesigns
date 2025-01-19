@@ -227,8 +227,16 @@ h1, h2, h3, p {
 }
 
 /* Homepage carousel */
+/* 
 #story-carousel {
-    background-color: #0dcaf041;
+    border: 1px solid #8e8f8f;
+    border-left: none;
+    border-right: none;
+} */
+
+.carousel-seperator {
+    max-width: 60%;
+    margin: auto;
 }
 
 .carousel-item {
@@ -252,4 +260,12 @@ h1, h2, h3, p {
 
 .carousel-arrows:not(:hover){
     opacity: 0.5;
+}
+
+#read-more-stories-link {
+    text-decoration: none;
+    color:black;
+    margin: 1em;
+    display: inline-block;
+    font-weight: bold;
 }
