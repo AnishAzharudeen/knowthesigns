@@ -13,7 +13,6 @@
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'css/index.css'%}">
 
@@ -23,8 +22,9 @@
     <title>Hope Unbound</title>
   </head>
   <body>
+    <div>
     <div class="bg-head">
-      <h1 class="munsell pt-5 pb-3 text-center">
+      <h1 class="onyx pt-5 pb-3 text-center">
         Human Trafficing and Slavery Prevention
       </h1>
       <nav class="navbar navbar-expand-sm  bg-dark border-body" data-bs-theme="dark" >
@@ -37,13 +37,14 @@
             <div class="navbar-nav">
               <a class="nav-link active" href="/">Home</a>
               <a class="nav-link" href="{% url 'stories' %}">Testimonies</a>
-              <a class="nav-link" href="#">Advices</a>
-              <a class="nav-link">contact</a>
+              <a class="nav-link" href="{% url 'advice' %}">Advices</a>
+              <a class="nav-link">Contact</a>
             </div>
           </div>
         </div>
       </nav>
-      
+    </div>
+
       <!-- Django messages -->
       <div class="container">
       <div class="row">
