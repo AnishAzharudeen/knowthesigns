@@ -3,15 +3,21 @@
 {% load static %}
 {% block content %}
 <div class="header-container">
-  <div class="row justify-content-around align-items-center">
-    <div class="col-6 p-5">
-      <h3 class="munsell text-bolder">Empowering Lives, Ending Exploitation</h3>
-      <p class="text-white">
-        Human trafficking and modern slavery affect millions of people
-        worldwide, depriving individuals of their freedom and dignity. Our
-        mission is to combat these injustices through awareness, education, and
-        actionable solutions.
-      </p>
+    <div class="row justify-content-around align-items-center">
+        <div class="col-md-6 col-sm p-md-3 p-3">
+            <h3 class="munsell text-bolder text-md-start text-sm-center mb-3">Empowering Lives, Ending Exploitation</h3>
+            <p class="text-white text-md-start text-sm-center">Human trafficking and modern slavery affect millions of people worldwide, depriving individuals of their freedom and dignity. Our mission is to combat these injustices through awareness, education, and actionable solutions.</p>
+        </div>
+        <div class="col-md-6 col-sm-10 col-lg-4 p-sm-0 text-end">
+            <div id="contact" class="m-3 ">
+                <!-- The create_report view is in the 'reports' app -->
+                <form action="{% url 'create-report' %}" method="post" class="form text-md-end text-sm-center">
+                    {% csrf_token %}
+                    {{ report_form | crispy }}
+                    <button type="submit" class="btn btn-lg btn-info mx-md-auto">Report anonymously</button>
+                </form>
+            </div>
+        </div>
     </div>
     <div class="col-md-6 col-sm-10 col-lg-4 p-sm-0 text-end">
       <div id="contact" class="m-3">
