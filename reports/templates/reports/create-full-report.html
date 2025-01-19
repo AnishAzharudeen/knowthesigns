@@ -1,0 +1,35 @@
+{% extends 'reports/report-base.html' %}
+
+{% block report_header %}
+    <h2>Create a new report.</h2>
+{% endblock %}
+
+{% block report_form %}
+    <form action="{% url 'create-full-report' %}" method="post" class="form full-form">
+        {% csrf_token %}
+
+        <div class="form-group row">
+            <label class="col-form-label">{{ report_message_form.message.label }}</label>
+            <div>
+                {{ report_message_form.message }}
+            </div>
+        </div>
+
+        {% for field in report_details_form %}
+            <div class="form-group row">
+                <label class="col-form-label">{{ field.label }}</label>
+                <div>
+                    {{ field }}
+                </div>
+            </div>
+        {% endfor %}
+        <div class="form-group row text-center">
+            <div class="col-6">
+        <button type="submit" class="btn btn-success">Create report</button>
+            </div>
+            <div class="col-6">
+                <a href="{% url 'home' %}" class="btn btn-info">Back Home</a>
+            </div>
+        </div>
+    </form>
+{% endblock %}

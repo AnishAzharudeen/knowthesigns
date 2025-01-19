@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{% static 'css/index.css'%}">
     <link rel="stylesheet" href="{% static 'css/news.css'%}">
 
-  <!-- Favicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
 
     <!-- SEO meta -->
@@ -29,7 +29,9 @@
   <body>
     <div>
     <div class="bg-head bg-logo-icon">
-      <h1 class="onyx pt-5 pb-3 text-center main-title bg-logo-icon">
+        
+        <div id="nav-logo"></div>
+      <h1 class="onyx text-center main-title">
         Human Trafficing and Slavery Prevention
       </h1>
     </div>
@@ -43,10 +45,10 @@
             <div class="navbar-nav">
               <a class="nav-link active" href="/">Home</a>
               <a class="nav-link" href="{% url 'stories' %}">Testimonies</a>
-              <a class="nav-link" href="{% url 'advice' %}">Advices</a>
+              <a class="nav-link" href="{% url 'advice' %}">Signs of Exploitation</a>
               <a class="nav-link" href="{% url 'news' %}">News</a>
-              <a class="nav-link">contact</a>
-
+              <a class="nav-link" href="{% url 'create-full-report' %}">Report an Activity</a>
+              <a class="nav-link staff-nav" href="{% url 'worker-login' %}">Staff</a>
             </div>
           </div>
         </div>
