@@ -1,123 +1,241 @@
-# Django Project
 
-This is a Django project that uses environment variables for configuration, including database settings.
+# Project Name - 
 
-## Table of Contents
 
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Running Tests](#running-tests)
-- [Manual Test Cases](#manual-test-cases)
-- [Automation](#automation)
-- [Lighthouse Performance](#lighthouse-performance)
-- [Wireframe](#wireframe)
-- [Responsive Design](#responsive-design)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
+here we neeed to add a description 
+* [Link to Deployed Project](https://(url for project).herokuapp.com/)
 
-## Installation
+## CONTENTS
+* [USER EXPERIENCE (UX)](#user-experience)
+  * [Purpose & target audience](#purpose-and-target-audience)
+  * [Goals](#goals)
+  * [E-commerce business model](#e-commerce-business-model-documentation)
+  * [Marketing strategy](#marketing-strategy)
+* [PROJECT DESIGN](#project-design)
+  * [Wireframes](#wireframes)
+  * [User Stories](#user-stories)
+  * [Logic](#logic)
+  * [Color Scheme](#color-scheme)
+  * [Imagery](#imagery)
+  * [Typography](#typography)
+  * [MVP](#mvp-minimun-vialble-product)
+* [FEATURES](#features)
+* [VALIDATION](#validation)
+* [TECH STACK](#tech-stack)
+  * [Languages and Frameworks](#languages-and-frameworks)
+  * [Tools and Libraries](#tools-and-libraries)
+* [TESTING](#testing)
+  * [Tests performed](#tests-performed)
+  * [User Story Tests](#user-story-tests)
+  * [Bugs resolved](#bugs-resolved)
+  * [Unresolved bugs](#unresolved-bugs)
+  * [Improvements & future developments](#improvements-and-future-developments)
+* [DEPLOYMENT](#deployment)
+* [FORKING & CLONING INSTRUCTIONS](#forking-and-cloning-instructions)
+* [SECURITY SETTINGS](#security-settings)
+* [CREDITS](#credits)
+  * [Resources](#resources)
+  * [Content](#content)
+  * [Media](#media)
+  
 
-1. Clone the repository:
+## PROJECT DESIGN
 
-   ```bash
-   git clone https://github.com/yourusername/yourproject.git
-   cd yourproject
-   python3 -m venv .venv
-source .venv/bin/activate  # On macOS/Linux
-.\.venv\Scripts\activate   # On Windows
+  ### Wireframes
 
-pip install -r requirements.txt
-Configuration
-Create a .env file in the root directory of your project and add the following environment variables:
+   The initial wireframes were created in [Miro](https://miro.com/es/) to understand how the site would work, and this layout would drive User Stories, the logic required and overall design artwork decisions.
 
-Ensure that your env.py file sets the environment variables correctly:
 
-Usage
-Run the development server:
+<span style="justify-content:space-between; align-items:top;">
+  <p>Desktop</p>
+  <img src="./static/doc_images/wire_frame_desktop.png"/>
 
-Access the application at http://127.0.0.1:8000/.
+  </br>
+    <p>Mobile</p>
+  <img src="./static/doc_images/wire_frame_mobile.png"/>
 
-Running Tests
-Run the tests using the following command:
 
-Manual Test Cases
-Home Page Load Test
+</span>
+    
 
-Description: Verify that the home page loads correctly.
-Steps:
-Navigate to http://127.0.0.1:8000/.
-Verify that the home page content is displayed.
-Expected Result: The home page should load without errors and display the correct content.
-Database Connection Test
+  ### Logic
+  The database schema and website logic was conceived and created using [Lucid](https://lucid.app/) as follows:
 
-Description: Verify that the application connects to the database correctly.
-Steps:
-Check the application logs for database connection messages.
-Verify that there are no connection errors.
-Expected Result: The application should connect to the database without errors.
-Automation
-Unit Tests
+  Database Structure:
 
-Use Django's built-in testing framework to write and run unit tests.
 
-Example command to run unit tests:
+* [Back to Contents](#contents)
 
-Continuous Integration
+  ### Color Scheme
+  The main colours of orange, dark blue and white were chosen for maximum contrast. I used [Coolors](https://coolors.co) to generate a colour palette.
 
-Set up a CI/CD pipeline using tools like GitHub Actions, Travis CI, or CircleCI to automate testing and deployment.
-Lighthouse Performance
-Running Lighthouse
 
-Use Google Chrome's Lighthouse tool to audit the performance, accessibility, best practices, and SEO of your web application.
-Steps to run Lighthouse:
-Open your application in Google Chrome.
-Open Chrome DevTools (F12 or right-click > Inspect).
-Go to the "Lighthouse" tab.
-Click "Generate report".
-Improving Performance
+  I used [Canva](https://www.canva.com/) to generate a logo and a style guide.
 
-Follow the recommendations provided by Lighthouse to improve the performance and quality of your web application.
-Wireframe
-Home Page Wireframe
 
-Home Page Wireframe
-Description: This wireframe represents the layout and structure of the home page.
-Login Page Wireframe
+<span style="display:flex; gap:50px; text-align:center;">
 
-Login Page Wireframe
-Description: This wireframe represents the layout and structure of the login page.
-Responsive Design
-Mobile Responsiveness
 
-Ensure that the application is fully responsive and works well on mobile devices.
-Use CSS media queries to adjust the layout for different screen sizes.
-Testing Responsiveness
+    ![complete logo ](./static/images/logo2.png)
 
-Test the application on various devices and screen sizes using browser developer tools.
-Verify that all elements are displayed correctly and the user experience is consistent across devices.
-Deployment
-Set the necessary environment variables on your deployment server.
-Follow your deployment process to deploy the application.
-Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make your changes.
-Commit your changes (git commit -m 'Add some feature').
-Push to the branch (git push origin feature-branch).
-Open a pull request.
-Credits
-Project Lead: Your Name
-Contributors:
-Contributor 1
-Contributor 2
-Special Thanks:
-Special Thanks 1
-Special Thanks 2
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
-Make sure to replace placeholders like `yourusername`, `yourproject`, and contributor names with actual details. Adjust the instructions, wireframe image paths, and credits as needed to fit your project's specifics.
 
+</span>
+
+  * [Back to Contents](#contents)
+
+  ### Imagery
+  - I used FontAwesome https://fontawesome.com/ for various icons in the navbar, shopping bag, and other places for visual effects.
+
+   <br>
+
+  - I used [Pexels](https://www.pexels.com/es-es/) for free images .
+
+  * [Back to Contents](#contents)
+
+  ### Typography
+   * I used a default Google font of Roboto and sans serif throughout the website for visual clarity and consistency.
+   * And  Alfa+Slab+One&display font for the title of the home page 
+   
+
+
+## TECH STACK
+The site has been built with the following tech, tools and libraries
+
+### Languages and Frameworks
+
+* HTML5
+* CSS
+* JavaScript
+* Python
+* Jquery
+* Django - web framework
+* Django AllAuth - user authentication
+* Psycopg2 - postgreSQL adapter for python
+* ElephantSQL - database hosting
+* Cloudinary - media hosting
+* Pillow - python image processing library
+* Gunicorn - WSGI HTTP server for UNIX
+* Bootstrap 5 and react-bootsrap - frontend responsive styling framework
+* Fontawesom icons
+* Heroku - live site hosting
+
+
+### Tools and Libraries
+* GitHub Projects - agile management, kanban, roadmap and milestones
+* GitHub Repo - code storage
+* Git - version control
+* GitPod & VS Code - IDE
+* [Miro](https://balsamiq.com/) - creating wireframes
+* [Coolors](https://coolors.co) - color pallette generator
+* [Image resizer](https://www.reduceimages.com/) - resizing images for optimal storage
+* [Canva](https://www.canva.com/) - creating artwork
+* Google Fonts - consistent typography
+* [Lucid Chart](https://lucid.app/) - creating a database schema
+* [FontAwesome](https://fontawesome.com/) - icons
+* [W3C HTML Validator](https://validator.w3.org/) - html code validation
+* [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) - css code validation
+* LightHouse - measures performance, accessibility, best practices and SEO
+* Chrome Dev Tools - for development debugging
+* [CI Python Linter](https://pep8ci.herokuapp.com/) - code analysis tool conforming to pep8
+* Prettier - code formatter for html, css and javascript
+* ESLint - code analysis tool for javascript
+
+
+## DEPLOYMENT
+  for a deployment, keep in mind that depending on the functionalities, some extra configuration may be missing. Very important is the configuration of variables in Heroku and the add-ons since without these activated you will not be able to see the project correctly
+
+  Initially, Django was installed following this Code Institute [DRF Cheatsheet](https://docs.google.com/document/d/1LCLxWhmW_4VTE4GXsnHgmPUwSPKNT4KyMxSH8agbVqU/edit#heading=h.mpopj7v69qqn)
+
+   1. Create a Cloudinary account and gather API key
+   2. Create ElephantSQL database and gather API key
+   3. Install Django
+   4. Create project
+   5. Install Cloudinary Storage
+   6. Install Pillow (image processing)
+   7. Update INSTALLED_APPs
+       * all apps in the django project must be make migrations
+       * python manage.py makemigrations
+       * python manage.py migrate
+       * to pass external data to the models if you need it.
+          - create the fixture folder
+          - add your file.json to the folder
+          - python manage.py loaddata 'name.json' 
+   8. Create env.py file
+       * Add CLOUDINARY_KEY (from Cloudinary API key)
+       * Add SECRET_KEY - (a unique password)
+       * ADD DATABASE_URL - (postgres ElephantSQL API key)
+       * STRIPE_SECRET_KEY 
+       * STRIPE_PUBLIC_KEY 
+       * DEBUG = True (if you have to push to heroku set False)
+   9. Update settings.py
+       * CLOUDINARY_STORAGE
+       * Define Media Storage URL
+       * Set DEFAULT_FILE_STORAGE
+       * Set DATABASES
+       * set STRIPE settings
+    
+
+  ### Deployment to Heroku involved the following steps and changes:
+   1. Set up DEBUG in settins.py to False
+   2. install gunicorn ==22.0.0
+   3. Create a Procfile (web: gunicorn core.wsgi:application) 
+   4. Create a runtime.txt file and add the following: Python-3.12.3
+   5. Terminate all servers.
+       * Ensure DEBUG and DEV in env.py are commented out
+       * python3 manage.py runserver
+   6. Check project is displaying in the preview on port 8000 or gitpod
+   7. Log into your Heroku account, create a new app, and access the dashboard for your application
+   8. Go to Settings and open the Config Vars add all the Api keys in your env.py
+       * Add CLOUDINARY_KEY (the Cloudinary API key)
+       * Add SECRET_KEY - (the unique password)
+       * Add DATABASE_URL - (postgres ElephantSQL API key)
+       * Add STRIPE_SECRET_KEY - (stripe payments Api key)
+   9. Ensure your application has an ALLOWED_HOST your '.herokuapp.com' - '.gitpod.io'
+   10. Ensure in Resources in heroku dasboard change your dinos active.
+   11. Go to the Deploy tab, connect the project to GitHub, and choose main branch to deploy
+       * Click Deploy Branch (manually)
+       * (Optional) Select Enable Automatic Deploys
+
+
+* [Back to Contents](#contents)
+
+
+## FORKING AND CLONING INSTRUCTIONS
+You can create a copy of a GitHub Repository without affecting the original by forking or cloning it.
+
+### Here's a step-by-step guide to forking:
+Forking is often used for proposing changes or using the project as a starting point for your own idea. Forking will apear on your GitHub profile.
+1. Log into GitHub or sign up for an account.
+2. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+3. Click "Fork" on the right side of the repository's page to create a copy in your own repository.
+
+### Here's a step-by-step guide to cloning:
+Cloning is often used for experimenting locally.  It will not show up on your GitHub profile.
+1. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+2. Click the green code button, then the arrow, and select the "clone by https" option to copy the URL.
+3. Open your preferred code editor and navigate to the directory where you want to clone the repository.
+4. Type 'git clone', paste the copied URL, and press enter. The repository will then be cloned to your machine.
+
+* [Back to Contents](#contents)
+
+
+ ### Resources
+  I used the following resources to help develop features and functionality:
+ 
+  * ChatGPT was used to help troubleshoot and explain code functions
+  * Google and StackOverflow were also used for more context and understanding
+  * I reached out to Code Institute team members and tutor support from time to time
+
+
+  * [Back to Contents](#contents)
+
+
+
+  ### Media
+  * The Iron Haven Fitness logo was custom-designed for this project.
+  * Logo icon created in Canva Pro.
+  * images from pexel
+  * Icons - font awesome.
+
+  * [Back to Contents](#contents)
