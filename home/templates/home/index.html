@@ -12,7 +12,7 @@
         <div class="col-md-6 col-sm-10 col-lg-4 p-sm-0 text-end">
             <div id="contact" class="m-3 ">
                 <!-- The create_report view is in the 'reports' app -->
-                <form action="{% url 'create-report' %}" method="post" class="form text-lg-end text-md-center text-sm-center">
+                <form action="{% url 'create-report' %}" method="post" class="form text-md-end text-sm-center">
                     {% csrf_token %}
                     {{ report_form | crispy }}
                     <button type="submit" class="btn btn-lg btn-info mx-md-auto">Report anonymously</button>
