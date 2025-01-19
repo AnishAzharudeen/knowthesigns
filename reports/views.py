@@ -51,6 +51,19 @@ def add_report_details(request):
 
 
 def create_full_report(request):
+    '''Returns page to create a report and create report details.'''
+    print("create_full_report")
+    if request.method == 'POST':
+        form = ReportForm(request.POST)
+        form_details = ReportDetailsForm(request.POST)
+        if form.is_valid() and form_details.is_valid():
+            form.save()
+            form_details.instance.report = form.instance
+            form_details.save()
+
+            messages.success(request, 'Report created successfully.')
+            return redirect('home')
+
     context = {
         'report_message_form': ReportForm,
         'report_details_form': ReportDetailsForm,
