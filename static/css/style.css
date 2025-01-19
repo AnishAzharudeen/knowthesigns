@@ -61,6 +61,7 @@ h1, h2, h3, p {
     border: 1px solid #313638;
     border-radius: 5px;
     background-color: #F5F1E3;
+    padding: 20px;
 }
 
 /* Advice */

@@ -1,32 +1,114 @@
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
 {% load static %}
-
 {% block content %}
 <div class="header-container">
-    <div class="row justify-content-around align-items-center">
-        <div class="col-6 p-5">
-            <h3 class="munsell text-bolder">Empowering Lives, Ending Exploitation</h3>
-            <p class="text-white">Human trafficking and modern slavery affect millions of people worldwide, depriving individuals of their freedom and dignity. Our mission is to combat these injustices through awareness, education, and actionable solutions.</p>
-        </div>
-        <div class="col-md-6 col-sm-10 col-lg-4 p-sm-0 text-end">
-            <div id="contact" class="m-3 ">
-                <!-- The create_report view is in the 'reports' app -->
-                <form action="{% url 'create-report' %}" method="post" class="form text-lg-end text-md-center text-sm-center">
-                    {% csrf_token %}
-                    {{ report_form | crispy }}
-                    <button type="submit" class="btn btn-lg btn-info mx-md-auto">Report anonymously</button>
-                </form>
-            </div>
-        </div>
-
+  <div class="row justify-content-around align-items-center">
+    <div class="col-6 p-5">
+      <h3 class="munsell text-bolder">Empowering Lives, Ending Exploitation</h3>
+      <p class="text-white">
+        Human trafficking and modern slavery affect millions of people
+        worldwide, depriving individuals of their freedom and dignity. Our
+        mission is to combat these injustices through awareness, education, and
+        actionable solutions.
+      </p>
     </div>
+    <div class="col-md-6 col-sm-10 col-lg-4 p-sm-0 text-end">
+      <div id="contact" class="m-3">
+        <!-- The create_report view is in the 'reports' app -->
+        <form
+          action="{% url 'create-report' %}"
+          method="post"
+          class="form text-lg-end text-md-center text-sm-center"
+        >
+          {% csrf_token %} {{ report_form | crispy }}
+          <button type="submit" class="btn btn-lg btn-info mx-md-auto">
+            Report anonymously
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 
-
-
-    <div id="testimonies">
-
+<div id="testimonies" class="grey-bg">
+  <div class="header-container2">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
+      {% if homepage_stories %} {% for story in homepage_stories %}
+      <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>{{ story.title }}</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="pt-2">{{ story.content | safe }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %} {% else %}
+      <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Illegal Slavery Survivor:</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">Miguel</p>
+            <p class="pt-2">
+              Miguel, enslaved in Florida's orange groves, endured threats and
+              exploitation after seeking work to pay for his son's cancer
+              treatment. The Coalition of Immokalee Workers discovered his
+              situation and orchestrated his rescue. Now free, Miguel works on
+              his own terms, enjoys time off, and sends money to his family.
+              Most importantly, his son has recovered and is healthy.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Sweatshop Worker:</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">Flor Molina</p>
+            <p class="pt-2">
+              Flor Molina was trafficked from Mexico to a garment factory in Los
+              Angeles, where she faced abuse and 18-hour workdays. After
+              pleading to attend church, she escaped and cooperated with federal
+              authorities investigating the factory. Flor was granted a T visa
+              to remain in the U.S. She has since become an advocate for
+              trafficking survivors, using her voice to represent those who
+              cannot speak for themselves.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Trafficking Victim:</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">Evelyn Chumbow</p>
+            <p class="pt-2">
+              Sold by her uncle in Cameroon, Evelyn was trafficked to Maryland
+              as a child and forced into domestic servitude. She endured
+              beatings, starvation, and constant degradation. At 17, Evelyn ran
+              away and found help through a priest who contacted the police.
+              Today, Evelyn is a survivor activist and board member of The Human
+              Trafficking Legal Center, working to combat modern slavery and
+              sharing her story to raise awareness and inspire change.
+            </p>
+          </div>
+        </div>
+      </div>
+      {% endif %}
     </div>
-    <div id="assessment"></div>
+  </div>
+</div>
+<div class="header-container3" id="assessment"></div>
 {% endblock %}

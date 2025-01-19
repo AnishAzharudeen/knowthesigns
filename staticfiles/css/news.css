@@ -1,0 +1,13 @@
+.image-container {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 200px; /* Ajusta esta altura según tus necesidades */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra el contenedor sin deformarse */
+}
