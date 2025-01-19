@@ -9,7 +9,44 @@ p {
 /* General styles */
 
 .bg-head {
-    background-color: #DDDBCB !important;
+    background-color: #F5F1E3 !important;
+}
+
+/* Buttons */
+
+.btn-edit {
+    color: black !important;
+    background-color: #1B9AAA !important;
+    border-color: #313638 !important;
+    text-decoration: none;
+    width: fit-content;
+}
+
+/* Images */
+
+.image-high {
+    max-height: 50vh;
+    width: auto;
+}
+
+/* Home Page */
+
+.background {
+    border: 1px solid #1B9AAA;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.outlined-text {
+    text-shadow:
+    -1px -1px 0 #313638,
+     1px -1px 0 #313638,
+    -1px 1px 0 #313638,
+     1px 1px 0 #313638;
+}
+
+.hide {
+    display: none;
 }
 
 /* Testeminies */
@@ -62,7 +99,7 @@ p {
     width: 80%;
   }
 
-  button[type="submit"] {
+  #add-details-button {
     float: right;
     margin-right: 15px;
   }
