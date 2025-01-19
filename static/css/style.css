@@ -249,3 +249,7 @@ h1, h2, h3, p {
 .carousel-arrows {
     width: 64px;
 }
+
+.carousel-arrows:not(:hover){
+    opacity: 0.5;
+}
