@@ -1,42 +1,30 @@
-{% extends 'base.html' %}
+{% extends 'reports/report-base.html' %}
 
-{% block content %}
-<br>
-<div class="col-10 offset-1 text-center">
-<h2>Your Message has been submitted.</h2>
-<br>
-<h4>If you are able to provide more information, please fill out as much as you can!</h4>
-</div>
+{% block report_header %}
+    <h2>Your report message has been submitted.</h2>
+    <br>
+    <h4>If you are able to provide more information to the report, please fill out as much as you can!</h4>
+{% endblock %}
 
-<div class="col">
-  <div class="row">
-    <div class="col-sm-1 col-md-2 col-xl-3"></div>
-    <div class="col-sm-10 col-md-8 col-xl-6">
-      <form
-        action="{% url 'add-report-details' %}"
-        method="post"
-        class="form full-form"
-      >
-        {% csrf_token %} {% for field in report_details_form %}
+{% block report_form %}
+    <form action="{% url 'add-report-details' %}" method="post" class="form full-form">
+        {% csrf_token %}
+
+        {% for field in report_details_form %}
         <div class="form-group row">
             <label class="col-form-label">{{ field.label }}</label>
             <div class="">
                 {{ field }}
-              </div>
+            </div>
         </div>
         {% endfor %}
         <div class="form-group row">
-          <div class="col">
-            <button type="submit" class="btn" id="add-details-button">Add details to your report</button>
-          </div>
-          <div>
-            <a href="{% url 'home' %}" class="col btn">Back Home</a>
-          </div>
+            <div class="col">
+                <button type="submit" class="btn" id="add-details-button">Add details to your report</button>
+            </div>
+            <div>
+                <a href="{% url 'home' %}" class="col btn">Back Home</a>
+            </div>
         </div>
-      </form>
-    </div>
-    <div class="col-sm-1 col-md-2 col-xl-3"></div>
-  </div>
-</div>
-
+    </form>
 {% endblock %}
