@@ -12,9 +12,10 @@ def get_news(request):
     # URL de la API de noticias
     base_url = "https://newsapi.org/v2/everything"
     params = {
-        "q": "tesla",
-        "from": "2024-12-19",
-        "sortBy": "publishedAt",
+        "q": "child labor OR Slavery Prevention OR Modern Slavery",
+        "from": "2015-01-01",
+        "language": "en",
+        "sortBy": "relevancy",
         "apiKey": NEWS_API_KEY,
     }
 
