@@ -2,13 +2,10 @@
 
 /*main tags rules*/
 
-
-
 h1, h2, h3, p {
     padding: 0;
     margin: 0;
 }
-
 
 /* General styles */
 
@@ -227,4 +224,10 @@ h1, h2, h3, p {
     .nav-link:hover::before {
         width: 15%;
     }
+}
+
+/* Homepage carousel */
+.carousel-item {
+    width: 70%;
+    margin-left: 15%;
 }
