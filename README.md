@@ -6,37 +6,34 @@ here we neeed to add a description
 * [Link to Deployed Project](https://knowthe-signs-e02e6c0640d7.herokuapp.com/)
 
 ## CONTENTS
-* [USER EXPERIENCE (UX)](#user-experience)
-  * [Purpose & target audience](#purpose-and-target-audience)
-  * [Goals](#goals)
-  * [E-commerce business model](#e-commerce-business-model-documentation)
-  * [Marketing strategy](#marketing-strategy)
-* [PROJECT DESIGN](#project-design)
-  * [Wireframes](#wireframes)
-  * [User Stories](#user-stories)
-  * [Logic](#logic)
-  * [Color Scheme](#color-scheme)
-  * [Imagery](#imagery)
-  * [Typography](#typography)
-  * [MVP](#mvp-minimun-vialble-product)
-* [FEATURES](#features)
-* [VALIDATION](#validation)
-* [TECH STACK](#tech-stack)
-  * [Languages and Frameworks](#languages-and-frameworks)
-  * [Tools and Libraries](#tools-and-libraries)
-* [TESTING](#testing)
-  * [Tests performed](#tests-performed)
-  * [User Story Tests](#user-story-tests)
-  * [Bugs resolved](#bugs-resolved)
-  * [Unresolved bugs](#unresolved-bugs)
-  * [Improvements & future developments](#improvements-and-future-developments)
-* [DEPLOYMENT](#deployment)
-* [FORKING & CLONING INSTRUCTIONS](#forking-and-cloning-instructions)
-* [SECURITY SETTINGS](#security-settings)
-* [CREDITS](#credits)
-  * [Resources](#resources)
-  * [Content](#content)
-  * [Media](#media)
+- [Project Name - Know the signs](#project-name---know-the-signs)
+  - [CONTENTS](#contents)
+  - [PROJECT DESIGN](#project-design)
+    - [Wireframes](#wireframes)
+    - [Logic](#logic)
+    - [Color Scheme](#color-scheme)
+    - [Imagery](#imagery)
+    - [Typography](#typography)
+  - [Tech. stack](#tech-stack)
+    - [Languages and frameworks](#languages-and-frameworks)
+  - [Hosting platforms](#hosting-platforms)
+  - [Packages](#packages)
+    - [Tools and Libraries](#tools-and-libraries)
+  - [DEPLOYMENT](#deployment)
+    - [Deployment to Heroku involved the following steps and changes:](#deployment-to-heroku-involved-the-following-steps-and-changes)
+  - [FORKING AND CLONING INSTRUCTIONS](#forking-and-cloning-instructions)
+    - [Here's a step-by-step guide to forking:](#heres-a-step-by-step-guide-to-forking)
+    - [Here's a step-by-step guide to cloning:](#heres-a-step-by-step-guide-to-cloning)
+    - [Resources](#resources)
+    - [Media](#media)
+    - [Credits](#credits)
+    - [Content References](#content-references)
+      - [Copilot](#copilot)
+      - [Educational sites](#educational-sites)
+  - [Future features](#future-features)
+  - [Acknowledgement](#acknowledgement)
+  - [Credit](#credit)
+    - [Images](#images)
   
 
 ## PROJECT DESIGN
@@ -99,26 +96,31 @@ here we neeed to add a description
    
 
 
-## TECH STACK
+## Tech. stack
 The site has been built with the following tech, tools and libraries
 
-### Languages and Frameworks
+### Languages and frameworks
 
 * HTML5
-* CSS
+* CSS3
 * JavaScript
+* JQuery
 * Python
-* Jquery
-* Django - web framework
-* Django AllAuth - user authentication
-* Psycopg2 - postgreSQL adapter for python
-* ElephantSQL - database hosting
-* Cloudinary - media hosting
+* Django
 * Pillow - python image processing library
+* Bootstrap 5 - frontend responsive styling framework
+
+## Hosting platforms
+* AWS - Host SQL database
+* Cloudinary - Host images/videos
+* Heroku - Host Django website
+* Git - Host repository and project booard
+
+## Packages
+* Psycopg2 - postgreSQL adapter for python
 * Gunicorn - WSGI HTTP server for UNIX
-* Bootstrap 5 and react-bootsrap - frontend responsive styling framework
-* Fontawesom icons
-* Heroku - live site hosting
+* Django AllAuth - user authentication
+* Django crispy forms - Bootstrap form styling 
 
 
 ### Tools and Libraries
@@ -177,23 +179,22 @@ The site has been built with the following tech, tools and libraries
     
 
   ### Deployment to Heroku involved the following steps and changes:
-   1. Set up DEBUG in settins.py to False
-   2. install gunicorn ==22.0.0
-   3. Create a Procfile (web: gunicorn core.wsgi:application) 
-   4. Create a runtime.txt file and add the following: Python-3.12.3
-   5. Terminate all servers.
-       * Ensure DEBUG and DEV in env.py are commented out
-       * python3 manage.py runserver
-   6. Check project is displaying in the preview on port 8000 or gitpod
-   7. Log into your Heroku account, create a new app, and access the dashboard for your application
-   8. Go to Settings and open the Config Vars add all the Api keys in your env.py
+   1. Install gunicorn and psycopg2 then freeze requirements to requirements.txt.
+   2. Create a Procfile (web: gunicorn core.wsgi:application).
+   3. Log into your Heroku account, create a new app, and access the dashboard for your application.
+   4. Go to Settings and open the Config Vars add all the Api keys in your env.py
        * Add CLOUDINARY_KEY (the Cloudinary API key)
        * Add SECRET_KEY - (the unique password)
-       * Add DATABASE_URL - (postgres ElephantSQL API key)
        * Add STRIPE_SECRET_KEY - (stripe payments Api key)
-   9. Ensure your application has an ALLOWED_HOST your '.herokuapp.com' - '.gitpod.io'
-   10. Ensure in Resources in heroku dasboard change your dinos active.
-   11. Go to the Deploy tab, connect the project to GitHub, and choose main branch to deploy
+       * AWS_DB_NAME - AWS database name
+       * AWS_HOST - AWS url
+       * AWS_PASSWORD
+       * AWS_USER
+       * DEVELOPMENT - Set to "False", to use AWS instead of local database
+       * SECRET_KEY - Contains your Django secret key for encryption
+   5. Ensure your application has an ALLOWED_HOST your '.herokuapp.com'
+   6.  Ensure in Resources in heroku dasboard change your dinos active.
+   7.  Go to the Deploy tab, connect the project to GitHub, and choose main branch to deploy
        * Click Deploy Branch (manually)
        * (Optional) Select Enable Automatic Deploys
 
@@ -267,28 +268,6 @@ These future features aim to create a more comprehensive and interactive learnin
 - We would like to extend our heartfelt thanks to **Code Institute** for providing this incredible platform and the opportunity to develop "Know the signs."
 
 - Special thanks to the instructors and mentors - ****, ****, and **** for their invaluable guidance and support throughout the process.
-
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
 
 ## Credit
 

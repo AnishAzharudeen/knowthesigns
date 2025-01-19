@@ -53,7 +53,7 @@ h1, h2, h3, p {
         max-height: 50vh;
         width: auto;
     }
-    
+
 }
 
 .carousel-style {
@@ -125,12 +125,6 @@ h1, h2, h3, p {
     padding: 10px;
 }
 
-.reason:hover {
-    border: 1px solid #313638;
-    border-radius: 5px;
-    background-color: #F5F1E3;
-    padding: 20px;
-}
 
 /* Advice */
 
@@ -197,6 +191,10 @@ h1, h2, h3, p {
     margin-right: 15px;
   }
 
+.pl {
+    margin-left: 15px;
+}
+
 /* Colors */
 
 .onyx {
@@ -223,11 +221,16 @@ h1, h2, h3, p {
     background-color: #313638!important;
 }
 
+.bg-munsell {
+    background-color: #1B9AAA!important;
+}
+
 /*Nav bar elements*/
 
 .nav-link {
     color: white!important;
     position: relative;
+    z-index: 10;
 }
 
 .nav-link:hover {
@@ -249,6 +252,12 @@ h1, h2, h3, p {
 
 .nav-link:hover::before {
     width: 100%;
+}
+
+.staff-nav {
+    float: right;
+    margin-left: 30px;
+
 }
 
 @media (max-width:990px){
@@ -288,6 +297,7 @@ h1, h2, h3, p {
 .carousel-arrows {
     width: 64px;
     max-width: 100%;
+ 
 }
 
 .carousel-control-next, .carousel-control-prev {
@@ -304,4 +314,16 @@ h1, h2, h3, p {
     margin: 1em;
     display: inline-block;
     font-weight: bold;
+}
+
+/* Workers */
+
+.login-form {
+    max-width: fit-content;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
