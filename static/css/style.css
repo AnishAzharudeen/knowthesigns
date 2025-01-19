@@ -1,8 +1,9 @@
 /*main tags rules*/
 html,
 body {
-    width: 100%;
-    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,
@@ -40,6 +41,12 @@ p {
 
 #staff-login-link {
     text-decoration: none;
+}
+
+#page-footer {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    margin-top: auto;
 }
 
 /* Buttons */
