@@ -45,3 +45,15 @@
 .image-control{
     width: 500px;
 }
+
+@media (max-width:480px){
+    .image-control{
+        width: 300px;
+    }
+    .news-container-mobile{
+        width: 90%;
+        height: auto;
+        margin: 10px auto;
+    }
+    
+}
