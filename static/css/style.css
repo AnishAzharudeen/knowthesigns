@@ -227,12 +227,10 @@ h1, h2, h3, p {
 }
 
 /* Homepage carousel */
-/* 
-#story-carousel {
-    border: 1px solid #8e8f8f;
-    border-left: none;
-    border-right: none;
-} */
+#carousel-stories-heading {
+    text-align: center;
+    margin: 0.5em;
+}
 
 .carousel-seperator {
     max-width: 60%;
