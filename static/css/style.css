@@ -125,12 +125,6 @@ h1, h2, h3, p {
     padding: 10px;
 }
 
-.reason:hover {
-    border: 1px solid #313638;
-    border-radius: 5px;
-    background-color: #F5F1E3;
-    padding: 20px;
-}
 
 /* Advice */
 
@@ -227,6 +221,10 @@ h1, h2, h3, p {
     background-color: #313638!important;
 }
 
+.bg-munsell {
+    background-color: #1B9AAA!important;
+}
+
 /*Nav bar elements*/
 
 .nav-link {
@@ -298,6 +296,7 @@ h1, h2, h3, p {
 .carousel-arrows {
     width: 64px;
     max-width: 100%;
+ 
 }
 
 .carousel-control-next, .carousel-control-prev {
