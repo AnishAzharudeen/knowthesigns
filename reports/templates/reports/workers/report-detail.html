@@ -5,11 +5,11 @@
 
 <div class="container">
     <!-- REPORT DIV -->
-    <div>
-        <a href="{% url 'view-reports' %}">Back to reports</a>
+    <div class="col full-form">
+        <a href="{% url 'view-reports' %}" class="btn btn-info mt-5 mb-3 pl">Back to reports</a>
 
-        <div>
-            <h2>{{ report.date_created }}</h2>
+        <div class="margin-all">
+            <h2>Date: {{ report.date_created }}</h2>
             <h3>Actioned: {{ report.actioned }}</h3>
             <!-- Uses JS to resolve/unresolve then reloads page -->
             <button id="mark-resolved-button">Mark as {% if report.actioned %}un{% endif %}resolved</button>
@@ -23,7 +23,7 @@
         <!-- Not all reports have report details -->
         {% if report.details %}
             <div>
-                <div>
+                <div class="margin-all">
                     <h3>{{ report.details.name }}</h3>
                     <p>{{ report.details.first_line_address }}</p>
                     <p>{{ report.details.second_line_address }}</p>
@@ -38,38 +38,38 @@
                 </div>
             </div>
         {% else %}
-            <p>No further details available.</p>
+            <p class="margin-all">No further details available.</p>
         {% endif %}
-    </div>
-</div>
 
-<!-- WORKER RESPONSE DIV -->
-<div>
-    <form method="post" action="{% url 'report-detail' report.id %}">
-        {% csrf_token %}
+        <!-- WORKER RESPONSE DIV -->
         <div>
-            <label for="Update">Update:</label>
-            <textarea id="update-message" name="update-message" required></textarea>
-            <button type="submit" >Submit</button>
+            <form method="post" action="{% url 'report-detail' report.id %}">
+                {% csrf_token %}
+                <div class="margin-all">
+                    <label for="Update">Update:</label>
+                    <textarea id="update-message" name="update-message" required></textarea>
+                    <button type="submit" >Submit</button>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
 
-    <!-- PREVIOUS ACTION MESSAGES DIV -->
-<div>
-    {% if action_messages %}
-        <h3>Previous messages:</h3>
-        {% for message in action_messages %}
+        <!-- PREVIOUS ACTION MESSAGES DIV -->
+        <div class="margin-all">
+            {% if action_messages %}
+            <h3>Previous messages:</h3>
+            {% for message in action_messages %}
             <div>
                 <p>{{ message.update_message }}</p>
                 <p><small>~ Posted on {{ message.date_created | date:"H:i Y-m-d" }} by {{ message.worker_user }} </small></p>
             </div>
-        {% endfor %}
-    {% else %}
-        <h3>No previous messages.</h3>
-    {% endif %}
-</div>
+            {% endfor %}
+            {% else %}
+            <h3>No previous messages.</h3>
+            {% endif %}
+        </div>
 
+    </div>
+</div>
 {% endblock %}
 
 {% block extras %}
