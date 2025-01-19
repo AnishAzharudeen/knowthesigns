@@ -245,15 +245,20 @@ h1, h2, h3, p {
 }
 
 /* Homepage carousel */
+#story-carousel {
+    max-width: 1200px;
+    margin: auto;
+}
+
 #carousel-stories-heading {
     text-align: center;
     padding-top: 1em;
 }
 
-.carousel-seperator {
+/* .carousel-seperator {
     max-width: 60%;
     margin: auto;
-}
+} */
 
 .carousel-item {
     height: 15em;
@@ -264,14 +269,19 @@ h1, h2, h3, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    min-height: 10em;
     text-align: center;
-    width: 60%;
+    width: 70%;
     margin: auto;
 }
 
 .carousel-arrows {
     width: 64px;
+    max-width: 100%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+   max-width: 15%;
 }
 
 .carousel-control-next:not(:hover), .carousel-control-prev:not(:hover){
