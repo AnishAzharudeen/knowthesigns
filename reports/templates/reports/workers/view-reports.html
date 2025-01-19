@@ -1,22 +1,26 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="container">
 
+<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mt-5 pt-5">
     {% for report in reports %}
 
         <div class="container">
             <!-- Passes report id to the report detail view -->
-            <a href="{% url 'report-detail' report.id %}">
-                <div>
-                    <h2>{{ report.date_created }}</h2>
-                    <h3>Read: {{ report.read }}</h3>
-                    <h3>Actioned: {{ report.actioned }}</h3>
+            <a href="{% url 'report-detail' report.id %}" class="links margin-all">
+                <div class="card-post card-body d-flex flex-column testemony">
+                    <h2 class="card-title">{{ report.date_created }}</h2>
+                    <h3 class="card-text">Read: {{ report.read }}</h3>
+                    <h3 class="card-text">Actioned: {{ report.actioned }}</h3>
                     <div>
-                        <p>{{ report.message }}</p>
+                        <p class="card-text">{{ report.message }}</p>
                     </div>
                 </div>
             </a>
         </div>
     {% endfor %}
+</div>
+</div>
 
 {% endblock %}

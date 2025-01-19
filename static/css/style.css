@@ -53,7 +53,7 @@ h1, h2, h3, p {
         max-height: 50vh;
         width: auto;
     }
-    
+
 }
 
 .carousel-style {
@@ -191,6 +191,10 @@ h1, h2, h3, p {
     margin-right: 15px;
   }
 
+.pl {
+    margin-left: 15px;
+}
+
 /* Colors */
 
 .onyx {
@@ -226,6 +230,7 @@ h1, h2, h3, p {
 .nav-link {
     color: white!important;
     position: relative;
+    z-index: 10;
 }
 
 .nav-link:hover {
@@ -247,6 +252,12 @@ h1, h2, h3, p {
 
 .nav-link:hover::before {
     width: 100%;
+}
+
+.staff-nav {
+    float: right;
+    margin-left: 30px;
+
 }
 
 @media (max-width:990px){
@@ -303,4 +314,20 @@ h1, h2, h3, p {
     margin: 1em;
     display: inline-block;
     font-weight: bold;
+}
+
+/* Workers */
+
+.login-form {
+    max-width: fit-content;
+}
+
+.page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.margin-all {
+    margin: 15px;
 }

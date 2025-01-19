@@ -1,134 +1,273 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Anish Fatima,
+# Project Name - Know the signs
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+here we neeed to add a description 
+* [Link to Deployed Project](https://knowthe-signs-e02e6c0640d7.herokuapp.com/)
 
-## Gitpod Reminders
+## CONTENTS
+- [Project Name - Know the signs](#project-name---know-the-signs)
+  - [CONTENTS](#contents)
+  - [PROJECT DESIGN](#project-design)
+    - [Wireframes](#wireframes)
+    - [Logic](#logic)
+    - [Color Scheme](#color-scheme)
+    - [Imagery](#imagery)
+    - [Typography](#typography)
+  - [Tech. stack](#tech-stack)
+    - [Languages and frameworks](#languages-and-frameworks)
+  - [Hosting platforms](#hosting-platforms)
+  - [Packages](#packages)
+    - [Tools and Libraries](#tools-and-libraries)
+  - [DEPLOYMENT](#deployment)
+    - [Deployment to Heroku involved the following steps and changes:](#deployment-to-heroku-involved-the-following-steps-and-changes)
+  - [FORKING AND CLONING INSTRUCTIONS](#forking-and-cloning-instructions)
+    - [Here's a step-by-step guide to forking:](#heres-a-step-by-step-guide-to-forking)
+    - [Here's a step-by-step guide to cloning:](#heres-a-step-by-step-guide-to-cloning)
+    - [Resources](#resources)
+    - [Media](#media)
+    - [Credits](#credits)
+    - [Content References](#content-references)
+      - [Copilot](#copilot)
+      - [Educational sites](#educational-sites)
+  - [Future features](#future-features)
+  - [Acknowledgement](#acknowledgement)
+  - [Credit](#credit)
+    - [Images](#images)
+  
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## PROJECT DESIGN
 
-`python3 -m http.server`
+  ### Wireframes
 
-A blue button should appear to click: _Make Public_,
+   The initial wireframes were created in [Miro](https://miro.com/es/) to understand how the site would work, and this layout would drive User Stories, the logic required and overall design artwork decisions.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+<span style="justify-content:space-between; align-items:top;">
+  <p>Desktop</p>
+  <img src="./static/doc_images/wire_frame_desktop.png"/>
 
-A blue button should appear to click: _Make Public_,
+  </br>
+    <p>Mobile</p>
+  <img src="./static/doc_images/wire_frame_mobile.png"/>
 
-Another blue button should appear to click: _Open Browser_.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+</span>
+    
 
-To log into the Heroku toolbelt CLI:
+  ### Logic
+  The database schema and website logic was conceived and created using [Lucid](https://lucid.app/) as follows:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  Database Structure:
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
 
-### Connecting your Mongo database
+* [Back to Contents](#contents)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+  ### Color Scheme
+  The main colours of orange, dark blue and white were chosen for maximum contrast. I used [Coolors](https://coolors.co) to generate a colour palette.
 
-------
 
-## Release History
+  I used [Canva](https://www.canva.com/) to generate a logo and a style guide.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**June 18, 2024,** Add Mongo back into template
+<span style="display:flex; gap:50px; text-align:center;">
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
 
-**May 28 2024:** Fix Mongo and Links installs
+    ![complete logo ](./static/images/logo2.png)
 
-**April 26 2024:** Update node version to 16
 
-**September 20 2023:** Update Python version to 3.9.17.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+</span>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+  * [Back to Contents](#contents)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+  ### Imagery
+  - I used FontAwesome https://fontawesome.com/ for various icons in the navbar, shopping bag, and other places for visual effects.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+   <br>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - I used [Pexels](https://www.pexels.com/es-es/) for free images .
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  * [Back to Contents](#contents)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  ### Typography
+   * I used a default Google font of Roboto and sans serif throughout the website for visual clarity and consistency.
+   * And  Alfa+Slab+One&display font for the title of the home page 
+   
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Tech. stack
+The site has been built with the following tech, tools and libraries
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Languages and frameworks
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* HTML5
+* CSS3
+* JavaScript
+* JQuery
+* Python
+* Django
+* Pillow - python image processing library
+* Bootstrap 5 - frontend responsive styling framework
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Hosting platforms
+* AWS - Host SQL database
+* Cloudinary - Host images/videos
+* Heroku - Host Django website
+* Git - Host repository and project booard
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Packages
+* Psycopg2 - postgreSQL adapter for python
+* Gunicorn - WSGI HTTP server for UNIX
+* Django AllAuth - user authentication
+* Django crispy forms - Bootstrap form styling 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+### Tools and Libraries
+* GitHub Projects - agile management, kanban, roadmap and milestones
+* GitHub Repo - code storage
+* Git - version control
+* GitPod & VS Code - IDE
+* [Miro](https://balsamiq.com/) - creating wireframes
+* [Coolors](https://coolors.co) - color pallette generator
+* [Image resizer](https://www.reduceimages.com/) - resizing images for optimal storage
+* [Canva](https://www.canva.com/) - creating artwork
+* Google Fonts - consistent typography
+* [Lucid Chart](https://lucid.app/) - creating a database schema
+* [FontAwesome](https://fontawesome.com/) - icons
+* [W3C HTML Validator](https://validator.w3.org/) - html code validation
+* [W3C CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) - css code validation
+* LightHouse - measures performance, accessibility, best practices and SEO
+* Chrome Dev Tools - for development debugging
+* [CI Python Linter](https://pep8ci.herokuapp.com/) - code analysis tool conforming to pep8
+* Prettier - code formatter for html, css and javascript
+* ESLint - code analysis tool for javascript
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+## DEPLOYMENT
+  for a deployment, keep in mind that depending on the functionalities, some extra configuration may be missing. Very important is the configuration of variables in Heroku and the add-ons since without these activated you will not be able to see the project correctly
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+  Initially, Django was installed following this Code Institute [DRF Cheatsheet](https://docs.google.com/document/d/1LCLxWhmW_4VTE4GXsnHgmPUwSPKNT4KyMxSH8agbVqU/edit#heading=h.mpopj7v69qqn)
 
-**How will this affect me?**
+   1. Create a Cloudinary account and gather API key
+   2. Create ElephantSQL database and gather API key
+   3. Install Django
+   4. Create project
+   5. Install Cloudinary Storage
+   6. Install Pillow (image processing)
+   7. Update INSTALLED_APPs
+       * all apps in the django project must be make migrations
+       * python manage.py makemigrations
+       * python manage.py migrate
+       * to pass external data to the models if you need it.
+          - create the fixture folder
+          - add your file.json to the folder
+          - python manage.py loaddata 'name.json' 
+   8. Create env.py file
+       * Add CLOUDINARY_KEY (from Cloudinary API key)
+       * Add SECRET_KEY - (a unique password)
+       * ADD DATABASE_URL - (postgres ElephantSQL API key)
+       * STRIPE_SECRET_KEY 
+       * STRIPE_PUBLIC_KEY 
+       * DEBUG = True (if you have to push to heroku set False)
+   9. Update settings.py
+       * CLOUDINARY_STORAGE
+       * Define Media Storage URL
+       * Set DEFAULT_FILE_STORAGE
+       * Set DATABASES
+       * set STRIPE settings
+    
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  ### Deployment to Heroku involved the following steps and changes:
+   1. Install gunicorn and psycopg2 then freeze requirements to requirements.txt.
+   2. Create a Procfile (web: gunicorn core.wsgi:application).
+   3. Log into your Heroku account, create a new app, and access the dashboard for your application.
+   4. Go to Settings and open the Config Vars add all the Api keys in your env.py
+       * Add CLOUDINARY_KEY (the Cloudinary API key)
+       * Add SECRET_KEY - (the unique password)
+       * Add STRIPE_SECRET_KEY - (stripe payments Api key)
+       * AWS_DB_NAME - AWS database name
+       * AWS_HOST - AWS url
+       * AWS_PASSWORD
+       * AWS_USER
+       * DEVELOPMENT - Set to "False", to use AWS instead of local database
+       * SECRET_KEY - Contains your Django secret key for encryption
+   5. Ensure your application has an ALLOWED_HOST your '.herokuapp.com'
+   6.  Ensure in Resources in heroku dasboard change your dinos active.
+   7.  Go to the Deploy tab, connect the project to GitHub, and choose main branch to deploy
+       * Click Deploy Branch (manually)
+       * (Optional) Select Enable Automatic Deploys
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+* [Back to Contents](#contents)
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## FORKING AND CLONING INSTRUCTIONS
+You can create a copy of a GitHub Repository without affecting the original by forking or cloning it.
 
-**Can I opt out?**
+### Here's a step-by-step guide to forking:
+Forking is often used for proposing changes or using the project as a starting point for your own idea. Forking will apear on your GitHub profile.
+1. Log into GitHub or sign up for an account.
+2. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+3. Click "Fork" on the right side of the repository's page to create a copy in your own repository.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Here's a step-by-step guide to cloning:
+Cloning is often used for experimenting locally.  It will not show up on your GitHub profile.
+1. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+2. Click the green code button, then the arrow, and select the "clone by https" option to copy the URL.
+3. Open your preferred code editor and navigate to the directory where you want to clone the repository.
+4. Type 'git clone', paste the copied URL, and press enter. The repository will then be cloned to your machine.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+* [Back to Contents](#contents)
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+ ### Resources
+  I used the following resources to help develop features and functionality:
+ 
+  * ChatGPT was used to help troubleshoot and explain code functions
+  * Google and StackOverflow were also used for more context and understanding
+  * I reached out to Code Institute team members and tutor support from time to time
 
----
 
-Happy coding!
+  * [Back to Contents](#contents)
+
+
+
+  ### Media
+  * The Iron Haven Fitness logo was custom-designed for this project.
+  * Logo icon created in Canva Pro.
+  * images from pexel
+  * Icons - font awesome.
+
+  * [Back to Contents](#contents)
+
+  ### Credits
+
+### Content References
+
+#### Copilot
+
+- We have utilized GitHub Copilot to assist in generating content for the website.
+
+#### Educational sites
+ 
+
+
+## Future features
+
+We have several exciting features planned for future development to enhance this website
+
+- **Feedback to improve**: Implement a system where reporters receive regular feedback on their issue's progress. This will help reports  stay informed.
+
+
+
+These future features aim to create a more comprehensive and interactive learning environment, supporting the educational growth of children while keeping parents and teachers actively involved.
+
+## Acknowledgement
+ 
+- We would like to extend our heartfelt thanks to **Code Institute** for providing this incredible platform and the opportunity to develop "Know the signs."
+
+- Special thanks to the instructors and mentors - ****, ****, and **** for their invaluable guidance and support throughout the process.
 
 ## Credit
 
@@ -136,3 +275,6 @@ Happy coding!
 
 * [Right story carousel arrow](https://www.svgrepo.com/svg/334215/right-arrow)
 * [Left story carousel arrow](https://www.svgrepo.com/svg/334036/left-arrow)
+=======
+- We would also like to express our gratitude to our amazing team for their hard work, dedication, and collaboration in bringing "Know the signs" to life.
+
