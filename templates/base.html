@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    <link rel="stylesheet" href="{% static 'css/news.css'%}">
 
   <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
@@ -42,6 +43,7 @@
               <a class="nav-link active" href="/">Home</a>
               <a class="nav-link" href="{% url 'stories' %}">Testimonies</a>
               <a class="nav-link" href="#">Advices</a>
+              <a class="nav-link" href="{% url 'news' %}">News</a>
               <a class="nav-link">contact</a>
             </div>
           </div>

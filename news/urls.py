@@ -1,7 +1,6 @@
-from .views import getApi, get_news
+from .views import get_news
 from django.urls import path
 
 urlpatterns = [
-    # path("news/", get_news, name="news"),
-    # path("api_news/", getApi, name="getApi"),
+    path("", get_news, name="news"),
 ]
