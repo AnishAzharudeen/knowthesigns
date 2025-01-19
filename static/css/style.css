@@ -256,7 +256,7 @@ h1, h2, h3, p {
     width: 64px;
 }
 
-.carousel-arrows:not(:hover){
+.carousel-control-next:not(:hover), .carousel-control-prev:not(:hover){
     opacity: 0.5;
 }
 
