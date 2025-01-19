@@ -38,6 +38,7 @@ def add_report_details(request):
         if form.is_valid():
             form.instance.report = report
             form.save()
+            request.session['report_id'] = None
             messages.success(request,
                              'Report details added to report successfully.')
             return redirect('home')
