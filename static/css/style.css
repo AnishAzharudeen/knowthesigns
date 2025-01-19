@@ -36,6 +36,12 @@ p {
     justify-content: center;
 }
 
+/* Footer */
+
+#staff-login-link {
+    text-decoration: none;
+}
+
 /* Buttons */
 
 .btn-edit {
