@@ -255,13 +255,9 @@ h1, h2, h3, p {
     padding-top: 1em;
 }
 
-/* .carousel-seperator {
+.carousel-seperator {
     max-width: 60%;
     margin: auto;
-} */
-
-.carousel-item {
-    height: 15em;
 }
 
 .carousel-story-container {
@@ -269,10 +265,10 @@ h1, h2, h3, p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 10em;
+    min-height: 15em;
     text-align: center;
     width: 70%;
-    margin: auto;
+    margin: 1em auto;
 }
 
 .carousel-arrows {
