@@ -12,7 +12,7 @@
             <h2>Date: {{ report.date_created }}</h2>
             <h3>Actioned: {{ report.actioned }}</h3>
             <!-- Uses JS to resolve/unresolve then reloads page -->
-            <button id="mark-resolved-button">Mark as {% if report.actioned %}un{% endif %}resolved</button>
+            <button id="mark-resolved-button" class="margin-all">Mark as {% if report.actioned %}un{% endif %}resolved</button>
             <!-- This <p> is used by JS to display error message -->
             <p class="hide" id="mark-resolved-error-msg">Something went wrong</p>
             <div>
