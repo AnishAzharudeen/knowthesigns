@@ -1,37 +1,179 @@
-{% extends "base.html" %}
-
-{% load static %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <h2 class="text-center mt-3">Why this is imporant</h2>
-<br>
+<br />
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <!-- Photo by <a href="https://unsplash.com/@hermez777?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hermes Rivera</a> on <a href="https://unsplash.com/photos/man-in-black-jacket-holding-black-and-white-quote-board-0Uw43gNMwbQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  <div class="row">
+    <div class="col">
+      <!-- Photo by <a href="https://unsplash.com/@hermez777?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Hermes Rivera</a> on <a href="https://unsplash.com/photos/man-in-black-jacket-holding-black-and-white-quote-board-0Uw43gNMwbQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
        -->
-            <img src="../../../static/img/advice_head.jpg" alt="Human trafficking happens everywhere" class="image-high">
+      <img
+        src="../../../static/img/advice_head.jpg"
+        alt="Human trafficking happens everywhere"
+        class="image-high"
+      />
+    </div>
+    <div class="col">
+      <p class="reason">
+        Human trafficking and modern slavery are severe human rights violations
+        affecting millions worldwide. These crimes involve exploiting
+        individuals through force, fraud, or coercion for labor or sex.
+      </p>
+      <p class="reason">
+        Prevention and awareness are crucial due to the scale and hidden nature
+        of the problem.
+      </p>
+      <p class="reason">
+        An estimated 21 million people globally are trapped in modern slavery,
+        with victims often unable to seek help due to language barriers or fear.
+        Natural disasters and political instability can increase vulnerability
+        to trafficking, while over 40% of U.S. trafficking investigations
+        involve child sexual exploitation.
+      </p>
+      <p class="reason">
+        The economic impact is significant, as trafficking occurs in various
+        sectors including domestic work, factories, and agriculture.
+      </p>
+      <p class="reason">
+        Raising awareness helps communities recognize signs of trafficking,
+        potentially saving lives. Prevention efforts, such as education and
+        addressing root causes like poverty and lack of opportunities, are
+        essential in combating this global issue.
+      </p>
+      <br />
+      <p class="reason">
+        By understanding and actively working against human trafficking, we can
+        protect vulnerable individuals and create a safer, more just world for
+        all.
+      </p>
+      <br />
+      <h4>
+        <a href="#" class="btn btn-lg btn-edit">Report suspicious activity</a>
+      </h4>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="row">
+    <h3 class="text-center">
+      Recognizing Signs of Exploitation in Yourself and Others
+    </h3>
+  </div>
+  <br>
+  <div class="impoartant-msg">
+  <h5 class="text-center">
+    If you feel like any of the following signs apply to you or others, please report it on our platform immediately!
+  </h5>
+  <h6 class="text-center">
+    Once you have reported your suspicion, please refer to the "What you should do" section.
+  </h6>
+    </div>
+  <br>
+  <div class="row row-cols-1 row-cols-md-2 g-2">
+    <div class="col pt-3">
+      <div class="card h-100 reason">
+        <div class="text-center pt-2 sign-heading">
+          <h5>Restricted Movement</h5>
         </div>
-        <div class="col">
-            <p class="reason">Human trafficking and modern slavery are severe human rights violations affecting millions worldwide. These crimes involve exploiting individuals through force, fraud, or coercion for labor or sex.</p>
-            <p class="reason">Prevention and awareness are crucial due to the scale and hidden nature of the problem. </p>
-            <p class="reason">An estimated 21 million people globally are trapped in modern slavery, with victims often unable to seek help due to language barriers or fear. Natural disasters and political instability can increase vulnerability to trafficking, while over 40% of U.S. trafficking investigations involve child sexual exploitation. </p>
-            <p class="reason">The economic impact is significant, as trafficking occurs in various sectors including domestic work, factories, and agriculture. </p>
-            <p class="reason">Raising awareness helps communities recognize signs of trafficking, potentially saving lives. Prevention efforts, such as education and addressing root causes like poverty and lack of opportunities, are essential in combating this global issue. </p>
-            <br>
-            <p class="reason">By understanding and actively working against human trafficking, we can protect vulnerable individuals and create a safer, more just world for all.</p>
+        <br />
+        <div class="border-1">
+          <p class="sign-heading">How it shows:</p>
+          <p class="pt-2">An individual's freedom to leave their living or work premises is severely limited. They are always accompanied when outside and often live and work at the same location.</p>
+        </div>
+        <br />
+        <div class="border-1">
+          <p class="sign-heading">What you should do:</p>
+          <p class="pt-2">If you notice someone in this situation, call the police emergency number (999) or contact the Modern Slavery Helpline at 0800 0121 700.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Poor Living Conditions</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">How it shows:</p>
+            <p class="pt-2">People are living in overcrowded or substandard accommodations. You might notice multiple individuals being picked up and dropped off at the same times, or lights on at workplaces at unusual hours, suggesting people live there.</p>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">What you should do:</p>
+            <p class="pt-2">Report suspicions to local authorities or contact organizations like Hope for Justice for guidance.</p>
+          </div>
         </div>
     </div>
-    <br>
-    <br>
-    <div class="row">
-        <h4>
-            <a href="#" class="btn btn-lg btn-edit">Report suspicious activity</a>
-        </h4>
+    <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Financial Control</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">How it shows:</p>
+            <p class="pt-2">The person receives little or no payment for their work. They may express feeling indebted to someone or show unexplained signs of wealth without a known income source.</p>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">What you should do:</p>
+            <p class="pt-2">If you suspect financial exploitation, contact the police non-emergency number (101) to report the situation.</p>
+          </div>
+        </div>
     </div>
-    <br>
+    <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Lack of Documentation</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">How it shows:</p>
+            <p class="pt-2">The individual has no access to their personal identification documents. Someone else controls their passport or papers, or they are unable to show identity documents when asked.</p>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">What you should do:</p>
+            <p class="pt-2">Reach out to local anti-trafficking organizations or law enforcement for assistance.</p>
+          </div>
+        </div>
+    </div>
+    <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Signs of Physical Abuse</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">How it shows:</p>
+            <p class="pt-2">There are visible injuries or signs of malnutrition. The person may have untreated medical or dental conditions, or show evidence of physical violence or sexual abuse.</p>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">What you should do:</p>
+            <p class="pt-2">In cases of immediate danger, call emergency services. Otherwise, report to the Modern Slavery Helpline.</p>
+          </div>
+        </div>
+    </div>
+    <div class="col pt-3">
+        <div class="card h-100 reason">
+          <div class="text-center pt-2 sign-heading">
+            <h5>Behavioral Indicators</h5>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">How it shows:</p>
+            <p class="pt-2">The person appears fearful, anxious, or submissive. They avoid eye contact and seem reluctant to speak. When they do communicate, they may tell rehearsed stories or provide inconsistent information.</p>
+          </div>
+          <br />
+          <div class="border-1">
+            <p class="sign-heading">What you should do:</p>
+            <p class="pt-2">Approach the situation carefully and contact professionals trained in handling human trafficking cases, such as the National Human Trafficking Hotline.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <br />
 </div>
-
 
 {% endblock %}

@@ -104,6 +104,26 @@ h1, h2, h3, p {
     background-color: #F5F1E3;
 }
 
+/* Advice */
+
+.sign-heading {
+    text-decoration: underline;
+    padding-left: 10px;
+}
+
+.impoartant-msg {
+    font-style: italic;
+    padding: 10px;
+}
+
+.impoartant-msg:hover {
+    border: 2px solid #313638;
+    border-radius: 5px;
+    color: red;
+    font-weight: 700;
+    font-size: larger;
+}
+
 /* This color could also be the "bone" color */
 .testemony:hover {
     background-color: #F5F1E3;
