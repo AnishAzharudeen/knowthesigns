@@ -19,6 +19,10 @@
   <!-- Favicon -->
     <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
 
+    <!-- SEO meta -->
+    <meta name="description" content="An initiative dedicated to preventing human trafficking and modern slavery through awareness, education, and actionable resources. Join the fight to protect human rights and restore freedom.">
+    <meta name="keywords" content="Human Trafficking, Slavery Prevention, Modern Slavery, Human Rights, Anti-Trafficking, Awareness, Education, Freedom, Social Justice">
+
     <title>Hope Unbound</title>
   </head>
   <body>
@@ -26,6 +30,7 @@
       <h1 class="munsell pt-5 pb-3 text-center">
         Human Trafficing and Slavery Prevention
       </h1>
+    </div>
       <nav class="navbar navbar-expand-sm  bg-dark border-body" data-bs-theme="dark" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
@@ -45,17 +50,17 @@
       
       <!-- Django messages -->
       <div class="container">
-      <div class="row">
-        <div class="text-end">
-          {% for message in messages %}
-          <div class="alert {{ message.tags }}" id="msg" role="alert">
-            {{ message | safe }}
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="row">
+          <div class="text-end">
+            {% for message in messages %}
+            <div class="alert {{ message.tags }}" id="msg" role="alert">
+              {{ message | safe }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
           </div>
-          {% endfor %}
         </div>
       </div>
-  </div>
       {% block content %}
 
       <!-- Content Goes here -->
