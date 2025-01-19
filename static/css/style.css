@@ -229,7 +229,7 @@ h1, h2, h3, p {
 /* Homepage carousel */
 #carousel-stories-heading {
     text-align: center;
-    margin: 0.5em;
+    margin-top: 1em;
 }
 
 .carousel-seperator {
