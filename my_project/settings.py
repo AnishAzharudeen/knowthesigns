@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     # Project apps
     'home',
     'stories',
+    'advice',
     'reports',
     'news',
 
