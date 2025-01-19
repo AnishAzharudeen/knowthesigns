@@ -38,7 +38,7 @@ DEBUG = os.environ.get("DEBUG", False) == "True"
 # This is set to false in production, default is True to ensure production isn't affected
 DEVELOPMENT = os.environ.get("DEVELOPMENT", "True")
 
-ALLOWED_HOSTS = ["127.0.0.1", ".herokuapp.com"]
+ALLOWED_HOSTS = [os.environ.get("ALLOWED_HOST", "127.0.0.1")]
 
 
 # Application definition
