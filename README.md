@@ -1,9 +1,9 @@
 
-# Project Name - 
+# Project Name - Know the signs
 
 
 here we neeed to add a description 
-* [Link to Deployed Project](https://(url for project).herokuapp.com/)
+* [Link to Deployed Project](https://knowthe-signs-e02e6c0640d7.herokuapp.com/)
 
 ## CONTENTS
 * [USER EXPERIENCE (UX)](#user-experience)
@@ -239,3 +239,34 @@ Cloning is often used for experimenting locally.  It will not show up on your Gi
   * Icons - font awesome.
 
   * [Back to Contents](#contents)
+
+  ### Credits
+
+### Content References
+
+#### Copilot
+
+- We have utilized GitHub Copilot to assist in generating content for the website.
+
+#### Educational sites
+ 
+
+
+## Future features
+
+We have several exciting features planned for future development to enhance this website
+
+- **Feedback to improve**: Implement a system where reporters receive regular feedback on their issue's progress. This will help reports  stay informed.
+
+
+
+These future features aim to create a more comprehensive and interactive learning environment, supporting the educational growth of children while keeping parents and teachers actively involved.
+
+## Acknowledgement
+ 
+- We would like to extend our heartfelt thanks to **Code Institute** for providing this incredible platform and the opportunity to develop "Know the signs."
+
+- Special thanks to the instructors and mentors - ****, ****, and **** for their invaluable guidance and support throughout the process.
+
+
+- We would also like to express our gratitude to our amazing team for their hard work, dedication, and collaboration in bringing "Know the signs" to life.
