@@ -1,4 +1,4 @@
-#open-report-button {
+.reports-btn {
     border: 1px solid black;
     margin-top: 1em;
 }
@@ -20,4 +20,31 @@
 
 .card-title {
     font-size: 1em;
+}
+
+#back-to-reports {
+    width: fit-content;
+    padding: 0.5em 1em;
+}
+
+#report-detail-container {
+    max-width: 80%;
+    margin: 2em auto;
+    background: aliceblue;
+    padding: 1em;
+}
+
+#detail-header {
+    font-weight: bold;
+    display: flex;
+}
+
+#detail-date {
+    margin-left: auto;
+}
+
+#mark-resolved-btn {
+    margin-left: 1em;
+    padding: 0.2em 0.5em;
+    font-size: .8em;
 }

@@ -1,24 +1,36 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block additional_css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'reports/css/reports.css' %}" />
+{% endblock %}
+
 {% block content %}
 
 <div class="container">
+    <a href="{% url 'view-reports' %}" class="btn reports-btn" id="back-to-reports">Back to reports</a>
+   
     <!-- REPORT DIV -->
-    <div class="col full-form">
-        <a href="{% url 'view-reports' %}" class="btn btn-info mt-5 mb-3 pl">Back to reports</a>
-
-        <div class="margin-all">
-            <h2>Date: {{ report.date_created }}</h2>
-            <h3>Actioned: {{ report.actioned }}</h3>
-            <!-- Uses JS to resolve/unresolve then reloads page -->
-            <button id="mark-resolved-button" class="margin-all">Mark as {% if report.actioned %}un{% endif %}resolved</button>
+    <div id="report-detail-container">
+            <div id="detail-header">
+                <div>
+                    {% if report.actioned %}
+                        <img src="{% static 'img/tick.svg' %}" width="16" alt="actioned icon">
+                        <small>Resolved</small>
+                    {% else %}
+                        <img src="{% static 'img/pending.svg' %}" width="16" alt="not actioned icon">
+                        <small>Pending</small>
+                    {% endif %}
+                    <!-- Uses JS to resolve/unresolve then reloads page -->
+                    <button id="mark-resolved-btn" class="btn reports-btn mt-0">Mark as {% if report.actioned %}un{% endif %}resolved</button>
+                </div>
+                <span id="detail-date">{{ report.date_created | date:'Y-m-d H:i' }}</span>
+            </div>
             <!-- This <p> is used by JS to display error message -->
             <p class="hide" id="mark-resolved-error-msg">Something went wrong</p>
             <div>
                 <p>{{ report.message }}</p>
             </div>
-        </div>
 
         <!-- Not all reports have report details -->
         {% if report.details %}
