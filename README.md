@@ -283,12 +283,12 @@ You can create a copy of a GitHub Repository without affecting the original by f
 ### Here's a step-by-step guide to forking:
 Forking is often used for proposing changes or using the project as a starting point for your own idea. Forking will apear on your GitHub profile.
 1. Log into GitHub or sign up for an account.
-2. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+2. Go to the [Know the Sign Repository](https://github.com/AnishAzharudeen/knowthesigns)
 3. Click "Fork" on the right side of the repository's page to create a copy in your own repository.
 
 ### Here's a step-by-step guide to cloning:
 Cloning is often used for experimenting locally.  It will not show up on your GitHub profile.
-1. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+1. Go to the [Know the Sign Repository](https://github.com/AnishAzharudeen/knowthesigns)
 2. Click the green code button, then the arrow, and select the "clone by https" option to copy the URL.
 3. Open your preferred code editor and navigate to the directory where you want to clone the repository.
 4. Type 'git clone', paste the copied URL, and press enter. The repository will then be cloned to your machine.
