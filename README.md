@@ -7,7 +7,7 @@ here we neeed to add a description
 ## CONTENTS
 - [Project Name - Know the signs](#project-name---know-the-signs)
   - [CONTENTS](#contents)
-  - [USER EXPERIENCE (UX)](#user-experience)
+  - [USER EXPERIENCE (UX)](#user-experience-ux)
   - [PROJECT DESIGN](#project-design)
     - [Wireframes](#wireframes)
     - [Logic](#logic)
