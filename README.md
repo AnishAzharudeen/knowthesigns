@@ -1,12 +1,22 @@
-# Project Name - Know the signs
+# Know the signs
 
+KnowTheSigns is an anonymouse reporting website for victims and people who suspect human trafficking. 
+Reports are reviewed by trained staff who ensure that proper action is taken.
 
-here we neeed to add a description 
+Stories of inspiration can also be found on the website for victims. 
+Additionally, there is a page dedicated on advice to recognise exploitation in others.
+
 * [Link to Deployed Project](https://knowthe-signs-e02e6c0640d7.herokuapp.com/)
 
 ## CONTENTS
-- [Project Name - Know the signs](#project-name---know-the-signs)
+- [Know the signs](#know-the-signs)
   - [CONTENTS](#contents)
+  - [USER EXPERIENCE (UX)](#user-experience-ux)
+    - [Purpose](#purpose)
+    - [Target Audience](#target-audience)
+    - [Goals](#goals)
+    - [E-commerce Business Model](#e-commerce-business-model)
+    - [Marketing Strategy](#marketing-strategy)
   - [PROJECT DESIGN](#project-design)
     - [Wireframes](#wireframes)
     - [Logic](#logic)
