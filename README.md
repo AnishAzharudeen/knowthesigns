@@ -45,14 +45,15 @@ By providing these resources and fostering a community of support, "Know the Sig
     - [Resources](#resources)
     - [Media](#media)
     - [Testing and Validations](testing-and-validation)
+    - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
+    - [Future features](#future-features)
     - [Credits](#credits)
     - [Content References](#content-references)
       - [Copilot](#copilot)
       - [Educational sites](#educational-sites)
 
 
-  - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
-  - [Future features](#future-features)
+
   - [Acknowledgement](#acknowledgement)
   - [Credit](#credit)
     - [Images](#images)
