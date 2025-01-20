@@ -37,6 +37,9 @@ By providing these resources and fostering a community of support, "Know the Sig
   - [Hosting platforms](#hosting-platforms)
   - [Packages](#packages)
     - [Tools and Libraries](#tools-and-libraries)
+   
+  
+  
   - [DEPLOYMENT](#deployment)
     - [Deployment to Heroku involved the following steps and changes:](#deployment-to-heroku-involved-the-following-steps-and-changes)
   - [FORKING AND CLONING INSTRUCTIONS](#forking-and-cloning-instructions)
@@ -44,7 +47,9 @@ By providing these resources and fostering a community of support, "Know the Sig
     - [Here's a step-by-step guide to cloning:](#heres-a-step-by-step-guide-to-cloning)
     - [Resources](#resources)
     - [Media](#media)
+    * [TESTING](#testing)
   - [Testing and Validations](testing-and-validations)
+    * [Improvements & future developments](#improvements-and-future-developments)
   - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
   - [Future features](#future-features)
     - [Credits](#credits)
