@@ -3,25 +3,31 @@
 {% load static %}
 {% block content %}
 <div class="header-container">
-    <div class="row justify-content-around align-items-center">
-        <div class="col-md-6 col-sm p-md-3 p-3">
-            <h3 class="munsell text-center text-bolder text-md-start text-sm-center mb-3 p-2">Empowering Lives, Ending
-                Exploitation</h3>
-            <p class="text-white text-md-start text-sm-center">Human trafficking and modern slavery affect millions of
-                people
-                worldwide, depriving individuals of their freedom and dignity. Our mission is to combat these injustices
-                through
-                awareness, education, and actionable solutions.</p>
-        </div>
-        <div class="col-md-6 col-sm-10 col-lg-4 p-sm-0 text-end">
-            <div id="contact" class="m-3 ">
-                <!-- The create_report view is in the 'reports' app -->
-                <form action="{% url 'create-report' %}" method="post"
-                    class="form text-center text-md-end text-sm-center">
-                    {% csrf_token %}
-                    {{ report_form | crispy }}
-                    <button type="submit" class="btn btn-lg-lg bt-sm-sm btn-info mx-md-auto">Report anonymously</button>
-                </form>
+    <div class="container-fluid">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-md-6 col-sm p-md-3 p-3">
+                <h3 class="munsell text-center text-bolder text-md-start text-sm-center mb-3 p-2">Empowering Lives,
+                    Ending
+                    Exploitation</h3>
+                <p class="text-white text-md-start text-sm-center">Human trafficking and modern slavery affect millions
+                    of
+                    people
+                    worldwide, depriving individuals of their freedom and dignity. Our mission is to combat these
+                    injustices
+                    through
+                    awareness, education, and actionable solutions.</p>
+            </div>
+            <div class="col-md-6 col-sm-10 col-lg-4 p-sm-0 text-end">
+                <div id="contact" class="m-3 ">
+                    <!-- The create_report view is in the 'reports' app -->
+                    <form action="{% url 'create-report' %}" method="post"
+                        class="form text-center text-md-end text-sm-center">
+                        {% csrf_token %}
+                        {{ report_form | crispy }}
+                        <button type="submit" class="btn btn-lg-lg bt-sm-sm btn-info mx-md-auto">Report
+                            anonymously</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -61,45 +67,53 @@
 </div>
 
 <div id="advice">
-    <div class="row p-3 pt-5">
-        <div class="reason col-lg-6 col-md">
-            <h3 class="text-center">Recognizing Signs</h3>
-            <br>
-            <p>Human trafficking and modern slavery are global issues affecting millions. Recognizing potential victims
-                is crucial. Key signs include restricted movement, physical abuse, lack of personal documents, fearful
-                behavior, excessive work hours, and poor living conditions. If you suspect someone is being trafficked
-                or enslaved, it's important to act. Click here to get the full guide on how to recognize if you or
-                someone you know needs help.</p>
-            <br>
-            <div class="btn-placement">
-                <a href="{% url 'advice' %}" class="btn btn-lg btn-info mb-3">Click to learn more</a>
+    <div class="container-fluid">
+        <div class="row p-3 pt-5">
+            <div class="reason col-lg-6 col-md">
+                <h3 class="text-center">Recognizing Signs</h3>
+                <br>
+                <p>Human trafficking and modern slavery are global issues affecting millions. Recognizing potential
+                    victims
+                    is crucial. Key signs include restricted movement, physical abuse, lack of personal documents,
+                    fearful
+                    behavior, excessive work hours, and poor living conditions. If you suspect someone is being
+                    trafficked
+                    or enslaved, it's important to act. Click here to get the full guide on how to recognize if you or
+                    someone you know needs help.</p>
+                <br>
+                <div class="btn-placement">
+                    <a href="{% url 'advice' %}" class="btn btn-lg btn-info mb-3">Click to learn more</a>
+                </div>
             </div>
-        </div>
-        <div class="col-lg-6 col-md justify-content-center align-items-center text-center p-0">
-            <img src="{% static '/img/home_1.jpg'%}" alt="Human trafficking happens everywhere" class="image-control" />
+            <div class="col-lg-6 col-md justify-content-center align-items-center text-center p-0">
+                <img src="{% static '/img/home_1.jpg'%}" alt="Human trafficking happens everywhere"
+                    class="image-control" />
+            </div>
         </div>
     </div>
 </div>
 
 <!-- Latest News Section -->
-<div class="row mt-5 bg-munsell px-3">
-    <h2 class="text-center">Latest News</h2>
-    {% for news in latest_news %}
-    <div class="col-md-4 mb-3 news-container-mobile">
-        <div class="card h-100 h-md-50">
-            <div class="image-container">
-                <img src="{{ news.image.url }}" class="card-img-top" alt="{{ news.title }}">
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">{{ news.title }}</h5>
-                <p class="card-text">{{ news.description|truncatechars:100 }}</p>
-            </div>
-            <div class="card-footer text-end">
-                <a href="{{ news.url }}" class="btn btn-primary" target="_blank">Read More</a>
+<div class="container-fluid">
+    <div class="row mt-5 bg-munsell px-3">
+        <h2 class="text-center">Latest News</h2>
+        {% for news in latest_news %}
+        <div class="col-md-4 mb-3 news-container-mobile">
+            <div class="card h-100 h-md-50">
+                <div class="image-container">
+                    <img src="{{ news.image.url }}" class="card-img-top" alt="{{ news.title }}">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ news.title }}</h5>
+                    <p class="card-text">{{ news.description|truncatechars:100 }}</p>
+                </div>
+                <div class="card-footer text-end">
+                    <a href="{{ news.url }}" class="btn btn-primary" target="_blank">Read More</a>
+                </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 
 <div class="header-container4" id="assessment"></div>
