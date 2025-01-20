@@ -30,7 +30,7 @@ here we neeed to add a description
     - [Content References](#content-references)
       - [Copilot](#copilot)
       - [Educational sites](#educational-sites)
-      - [User Stories and Acceptance criteria](user-stories-and-acceptance-criteria)
+  -[User Stories and Acceptance criteria](user-stories-and-acceptance-criteria)
   - [Future features](#future-features)
   - [Acknowledgement](#acknowledgement)
   - [Credit](#credit)
@@ -326,7 +326,8 @@ Cloning is often used for experimenting locally.  It will not show up on your Gi
 - We have utilized GitHub Copilot to assist in generating content for the website.
 
 #### Educational sites
- 
+
+## User Stories and Accepatance Criteria
 
 
 ## Future features
