@@ -1,6 +1,10 @@
-# Project Name - Know the signs
+# Know the signs
 
 "Know the Signs" is a comprehensive platform dedicated to raising awareness about human trafficking and slavery. The website provides users with accurate and up-to-date information on the signs and symptoms of human trafficking, aiming to educate and empower individuals to identify potential victims and take appropriate action. The platform is designed to be user-friendly and accessible to a wide audience, including individuals, law enforcement, social workers, educators, community leaders, and survivors of human trafficking.
+Reports are reviewed by trained staff who ensure that proper action is taken.
+
+Stories of inspiration can also be found on the website for victims. 
+Additionally, there is a page dedicated on advice to recognise exploitation in others.
 
 Key features of the website include:
 - Educational resources on human trafficking and slavery.
@@ -10,13 +14,18 @@ Key features of the website include:
 
 By providing these resources and fostering a community of support, "Know the Signs" aims to make a significant impact in the fight against human trafficking and slavery.
 
-
 * [Link to Deployed Project](https://knowthe-signs-e02e6c0640d7.herokuapp.com/)
 
 ## CONTENTS
-- [Project Name - Know the signs](#project-name---know-the-signs)
+- [Know the signs](#know-the-signs)
   - [CONTENTS](#contents)
   - [USER EXPERIENCE (UX)](#user-experience-ux)
+    - [Purpose](#purpose)
+    - [Target Audience](#target-audience)
+    - [Goals](#goals)
+    - [E-commerce Business Model](#e-commerce-business-model)
+    - [Marketing Strategy](#marketing-strategy)
+
   - [PROJECT DESIGN](#project-design)
     - [Wireframes](#wireframes)
     - [Logic](#logic)
