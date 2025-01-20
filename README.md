@@ -387,6 +387,8 @@ These future features aim to create a more comprehensive and interactive learnin
 
  ![LighthouseResultsforHomeDesktop](./static/readme/lighthouse/home_d.PNG)
  ![LighthouseResultsforHomeMobile](./static/readme/lighthouse/home_m.PNG)
+ ![LighthouseResultsforRemoteDesktop](./static/readme/lighthouse/full_report_d.PNG)
+ ![LighthouseResultsforRemoteMobile](./static/readme/lighthouse/full_report_m.PNG)
 
  ####  Css Validation:
   
