@@ -23,21 +23,25 @@ p {
 }
 
 #django-msg {
-    margin-bottom: 0;
+    margin-top: 15px !important;
     height: 2.5em;
     padding: 0;
     margin: auto;
     display: flex;
     align-items: center;
-    width: 100%;
-    background-color: white;
+    width: 250px;
+    background-color: #0dcaf0;
     top: 0;
-    border-radius: 0;
+    border-radius: 5px;
     border-bottom: 1px solid darkgray;
 }
 
 #msg-content {
     margin: auto;
+}
+
+.msg-btn {
+    margin: 5px !important;
 }
 
 /* General styles */
@@ -83,6 +87,7 @@ p {
     border-color: #313638 !important;
     text-decoration: none;
     width: fit-content;
+    display: inline-block;
 }
 
 /* Images */
@@ -285,7 +290,7 @@ p {
 }
 
 .bg-munsell {
-    background-color: #1B9AAA !important;
+    background-color: #19a3b650 !important;
 }
 
 /*Nav bar elements*/
