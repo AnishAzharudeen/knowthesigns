@@ -83,10 +83,12 @@ p {
 
 .btn-edit {
     color: black !important;
-    background-color: #1B9AAA !important;
-    border-color: #313638 !important;
+    background-color: #b4f6ff !important;
     text-decoration: none;
     width: fit-content;
+    display: inline-block;
+    border: 1px solid #7d7d7d;
+    border-radius: .25rem;
 }
 
 /* Images */
@@ -174,6 +176,11 @@ p {
 .ngo-link {
     text-decoration: none;
     color: black;
+}
+
+.ngo-link:hover {
+    text-decoration: underline;
+    color: #126a75;
 }
 
 @media (min-width:768px) {
@@ -310,7 +317,7 @@ p {
 }
 
 .bg-munsell {
-    background-color: #1B9AAA !important;
+    background-color: #19a3b650 !important;
 }
 
 /*Nav bar elements*/

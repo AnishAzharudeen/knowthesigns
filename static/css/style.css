@@ -178,6 +178,11 @@ p {
     color: black;
 }
 
+.ngo-link:hover {
+    text-decoration: underline;
+    color: #126a75;
+}
+
 @media (min-width:768px) {
     .main-title {
         font-size: 1.6em;
