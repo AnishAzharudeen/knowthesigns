@@ -430,7 +430,7 @@ These future features aim to create a more comprehensive and interactive learnin
  
 - We would like to extend our heartfelt thanks to **Code Institute** for providing this incredible platform and the opportunity to develop "Know the signs."
 
-- Special thanks to the instructors and mentors and Hackathon Team.
+- Special thanks to the instructors, mentors and Hackathon Team.
 
 
 
