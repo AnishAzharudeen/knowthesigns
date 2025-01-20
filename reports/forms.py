@@ -11,7 +11,7 @@ class ReportForm(forms.ModelForm):
             'rows': 5,  
             'cols': 40  
         }),
-        label='Message',  
+        label=''
     )
 
     class Meta:
