@@ -83,11 +83,12 @@ p {
 
 .btn-edit {
     color: black !important;
-    background-color: #1B9AAA !important;
-    border-color: #313638 !important;
+    background-color: #b4f6ff !important;
     text-decoration: none;
     width: fit-content;
     display: inline-block;
+    border: 1px solid #7d7d7d;
+    border-radius: .25rem;
 }
 
 /* Images */
