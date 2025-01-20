@@ -328,17 +328,6 @@ Cloning is often used for experimenting locally.  It will not show up on your Gi
 
   * [Back to Contents](#contents)
 
-  ## Credit
-
-### Content References
-
-#### Copilot
-
-- We have utilized GitHub Copilot to assist in generating content for the website.
-
-#### Educational sites
-
-
 
 ## User Stories and Accepatance Criteria
 
@@ -372,6 +361,18 @@ We have several exciting features planned for future development to enhance this
 
 
 These future features aim to create a more comprehensive and interactive learning environment, supporting the educational growth of children while keeping parents and teachers actively involved.
+
+
+ ## Credit
+
+### Content References
+
+#### Copilot
+
+- We have utilized GitHub Copilot to assist in generating content for the website.
+
+#### Educational sites
+
 
 ## Acknowledgement
  
