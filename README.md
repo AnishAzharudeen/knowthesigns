@@ -1,10 +1,18 @@
 # Know the signs
 
-KnowTheSigns is an anonymouse reporting website for victims and people who suspect human trafficking. 
+"Know the Signs" is a comprehensive platform dedicated to raising awareness about human trafficking and slavery. The website provides users with accurate and up-to-date information on the signs and symptoms of human trafficking, aiming to educate and empower individuals to identify potential victims and take appropriate action. The platform is designed to be user-friendly and accessible to a wide audience, including individuals, law enforcement, social workers, educators, community leaders, and survivors of human trafficking.
 Reports are reviewed by trained staff who ensure that proper action is taken.
 
 Stories of inspiration can also be found on the website for victims. 
 Additionally, there is a page dedicated on advice to recognise exploitation in others.
+
+Key features of the website include:
+- Educational resources on human trafficking and slavery.
+- Interactive features suuch as  user stories to encourage engagement.
+- Collaboration with law enforcement, social workers, and NGOs to ensure trustworthy content.
+- A supportive community where users can share their experiences and support each other.
+
+By providing these resources and fostering a community of support, "Know the Signs" aims to make a significant impact in the fight against human trafficking and slavery.
 
 * [Link to Deployed Project](https://knowthe-signs-e02e6c0640d7.herokuapp.com/)
 
@@ -17,6 +25,7 @@ Additionally, there is a page dedicated on advice to recognise exploitation in o
     - [Goals](#goals)
     - [E-commerce Business Model](#e-commerce-business-model)
     - [Marketing Strategy](#marketing-strategy)
+
   - [PROJECT DESIGN](#project-design)
     - [Wireframes](#wireframes)
     - [Logic](#logic)
@@ -35,15 +44,18 @@ Additionally, there is a page dedicated on advice to recognise exploitation in o
     - [Here's a step-by-step guide to cloning:](#heres-a-step-by-step-guide-to-cloning)
     - [Resources](#resources)
     - [Media](#media)
+    - [Testing and Validations](testing-and-validation)
     - [Credits](#credits)
     - [Content References](#content-references)
       - [Copilot](#copilot)
       - [Educational sites](#educational-sites)
+
+
+  - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
   - [Future features](#future-features)
   - [Acknowledgement](#acknowledgement)
   - [Credit](#credit)
     - [Images](#images)
-  
 
 ## USER EXPERIENCE (UX)
 
@@ -125,7 +137,7 @@ By focusing on these key areas, "Know the Signs" aims to create a valuable resou
 
   ### Wireframes
 
-   The initial wireframes were created in [Miro](https://miro.com/es/) to understand how the site would work, and this layout would drive User Stories, the logic required and overall design artwork decisions.
+   The initial wireframes were created in [Miro](https://miro.com/app/board/uXjVLsxo6qA=/) to understand how the site would work, and this layout would drive User Stories, the logic required and overall design artwork decisions.
 
 
 <span style="justify-content:space-between; align-items:top;">
@@ -235,7 +247,7 @@ The site has been built with the following tech, tools and libraries
   Initially, Django was installed following this Code Institute [DRF Cheatsheet](https://docs.google.com/document/d/1LCLxWhmW_4VTE4GXsnHgmPUwSPKNT4KyMxSH8agbVqU/edit#heading=h.mpopj7v69qqn)
 
    1. Create a Cloudinary account and gather API key
-   2. Create ElephantSQL database and gather API key
+   2. Create PostgresSQL database and gather API key
    3. Install Django
    4. Create project
    5. Install Cloudinary Storage
@@ -293,12 +305,12 @@ You can create a copy of a GitHub Repository without affecting the original by f
 ### Here's a step-by-step guide to forking:
 Forking is often used for proposing changes or using the project as a starting point for your own idea. Forking will apear on your GitHub profile.
 1. Log into GitHub or sign up for an account.
-2. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+2. Go to the [Know the Sign Repository](https://github.com/AnishAzharudeen/knowthesigns)
 3. Click "Fork" on the right side of the repository's page to create a copy in your own repository.
 
 ### Here's a step-by-step guide to cloning:
 Cloning is often used for experimenting locally.  It will not show up on your GitHub profile.
-1. Go to the [Iron Haven Fitness Repository](https://github.com/richard9106/Project-5)
+1. Go to the [Know the Sign Repository](https://github.com/AnishAzharudeen/knowthesigns)
 2. Click the green code button, then the arrow, and select the "clone by https" option to copy the URL.
 3. Open your preferred code editor and navigate to the directory where you want to clone the repository.
 4. Type 'git clone', paste the copied URL, and press enter. The repository will then be cloned to your machine.
@@ -326,16 +338,28 @@ Cloning is often used for experimenting locally.  It will not show up on your Gi
 
   * [Back to Contents](#contents)
 
-  ### Credits
 
-### Content References
+## User Stories and Accepatance Criteria
 
-#### Copilot
+### User Stories for Users
+* 1.As a User, I want to learn about the signs of human trafficking, so that I can identify potential victims.
+* 2.As a User, I want to access educational resources, so that I can educate myself on human trafficking and slavery.
+* 3.As a User, I want to participate in interactive quizzes, so that I can test my knowledge on human trafficking.
+* 4.As a User, I want to read and share user stories, so that I can learn from others' experiences and share my own.
+* 5.As a User, I want to join forums, so that I can discuss and engage with the community on topics related to human trafficking.
+* 6.As a User, I want to access support resources, so that I can find help if I or someone I know is a victim of human trafficking.
+* 7.As a User, I want to receive regular updates and newsletters, so that I can stay informed about new information and resources.
+* 8.As a User, I want to have a user-friendly interface, so that I can easily navigate the website and find the information I need.
 
-- We have utilized GitHub Copilot to assist in generating content for the website.
-
-#### Educational sites
- 
+### User Stories for Admins
+* 1.As an Admin, I want to manage user accounts, so that I can ensure the security and integrity of the platform.
+* 2.As an Admin, I want to add and update educational content, so that the information provided is accurate and up-to-date.
+* 3.As an Admin, I want to moderate forums and user stories, so that I can maintain a safe and respectful community environment.
+* 4.As an Admin, I want to manage interactive quizzes, so that I can provide engaging and informative content for users.
+* 5.As an Admin, I want to collaborate with law enforcement and NGOs, so that I can ensure the content is trustworthy and reliable.
+* 6.As an Admin, I want to track user engagement and feedback, so that I can continuously improve the platform.
+* 7.As an Admin, I want to manage support resources, so that users can easily find help and assistance.
+* 8.As an Admin, I want to implement and manage marketing strategies, so that I can attract and retain users.
 
 
 ## Future features
@@ -348,13 +372,30 @@ We have several exciting features planned for future development to enhance this
 
 These future features aim to create a more comprehensive and interactive learning environment, supporting the educational growth of children while keeping parents and teachers actively involved.
 
+## Testing and Validations
+
+### Testing
+
+
+
+ ## Credit
+
+### Content References
+
+#### Copilot
+
+- We have utilized GitHub Copilot to assist in generating content for the website.
+
+#### Educational sites
+
+
 ## Acknowledgement
  
 - We would like to extend our heartfelt thanks to **Code Institute** for providing this incredible platform and the opportunity to develop "Know the signs."
 
 - Special thanks to the instructors and mentors - ****, ****, and **** for their invaluable guidance and support throughout the process.
 
-## Credit
+
 
 ### Images
 
