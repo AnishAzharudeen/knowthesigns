@@ -445,7 +445,7 @@ These future features aim to create a more comprehensive and interactive learnin
 =======
 
 
-- We would also like to express our gratitude to our amazing team for their hard work, dedication, and collaboration in bringing "Know the signs" to life.
+## We would also like to express our gratitude to our amazing team for their hard work, dedication, and collaboration in bringing "Know the signs" to life.
 
   
 * [Back to Contents](#contents)
