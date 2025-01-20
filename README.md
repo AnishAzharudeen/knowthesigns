@@ -47,7 +47,7 @@ By providing these resources and fostering a community of support, "Know the Sig
     - [Here's a step-by-step guide to cloning:](#heres-a-step-by-step-guide-to-cloning)
     - [Resources](#resources)
     - [Media](#media)
-    * [TESTING](#testing)
+ * [TESTING](#testing)
   - [Testing and Validations](testing-and-validations)
     * [Improvements & future developments](#improvements-and-future-developments)
   - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
