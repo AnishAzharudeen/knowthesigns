@@ -127,7 +127,7 @@ By focusing on these key areas, "Know the Signs" aims to create a valuable resou
 
   ### Wireframes
 
-   The initial wireframes were created in [Miro](https://miro.com/es/) to understand how the site would work, and this layout would drive User Stories, the logic required and overall design artwork decisions.
+   The initial wireframes were created in [Miro](https://miro.com/app/board/uXjVLsxo6qA=/) to understand how the site would work, and this layout would drive User Stories, the logic required and overall design artwork decisions.
 
 
 <span style="justify-content:space-between; align-items:top;">
