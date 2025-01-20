@@ -64,13 +64,17 @@
     </div>
 
     <!-- Django messages -->
-    <div id="msg-container">
-        {% for message in messages %}
-        <div class="alert {{ message.tags }}" id="django-msg" role="alert">
-            <span id="msg-content">{{ message | safe }}</span>
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div id="msg-container" class="container">
+        <div class="row">
+            <!-- <div class="col-md-8 offset-md-2"> -->
+            {% for message in messages %}
+                <div class="text-center msg-g alert {{ message.tags }}" id="django-msg" role="alert">
+                    <span id="msg-content">{{ message | safe }}</span>
+                    <button type="button" class="btn-close msg-btn" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
+            <!-- </div> -->
         </div>
-        {% endfor %}
     </div>
     {% block content %}
 
