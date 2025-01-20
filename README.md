@@ -382,7 +382,8 @@ These future features aim to create a more comprehensive and interactive learnin
 
 ### Testing
 * Validation of HTML/CSS/JavaScript, Lighthouse Audits, Bugs
-
+ #### Google Lighthouse Testing:
+ 
 
 * [Back to Contents](#contents)
  ## Credit
