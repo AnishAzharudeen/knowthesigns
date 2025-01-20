@@ -48,7 +48,7 @@ By providing these resources and fostering a community of support, "Know the Sig
     - [Resources](#resources)
     - [Media](#media)
  
- - [Testing and Validations](testing-and-validations)
+ - [Testing and Validations](#testing-and-validations)
    * [TESTING](#testing)
     * [Improvements & future developments](#improvements-and-future-developments)
   - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
