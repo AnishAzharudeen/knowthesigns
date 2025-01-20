@@ -387,14 +387,22 @@ These future features aim to create a more comprehensive and interactive learnin
 
  ![LighthouseResultsforHomeDesktop](./static/readme/lighthouse/home_d.PNG)
  ![LighthouseResultsforHomeMobile](./static/readme/lighthouse/home_m.PNG)
- ![LighthouseResultsforRemoteDesktop](./static/readme/lighthouse/full_report_d.PNG)
- ![LighthouseResultsforRemoteMobile](./static/readme/lighthouse/full_report_m.PNG)
+ ![LighthouseResultsforReportDesktop](./static/readme/lighthouse/full_report_d.PNG)
+ ![LighthouseResultsforReportMobile](./static/readme/lighthouse/full_report_m.PNG)
+ ![LighthouseResultsforNewsDesktop](./static/readme/lighthouse/news_d.PNG)
+ ![LighthouseResultsforNewsMobile](./static/readme/lighthouse/news_m.PNG)
+ ![LighthouseResultsforStoriesDesktop](./static/readme/lighthouse/stories_d.PNG)
+ ![LighthouseResultsforStoriesMobile](./static/readme/lighthouse/stories_m.PNG)
 
  ####  Css Validation:
   
-  *Passed alll the CSS validation
+  Passed CSS validation for all the three css files
 
  ![CSSResults][cssValidationImage]
+
+ ####  Css Validation:
+
+ Passed HTML validations for all the links.
 
 * [Back to Contents](#contents)
  ## Credits
