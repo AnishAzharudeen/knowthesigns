@@ -1,6 +1,7 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
 
+
 class News(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
@@ -8,6 +9,10 @@ class News(models.Model):
     image = CloudinaryField('image', blank=True, null=True)  # Imagen usando Cloudinary
     link = models.URLField(blank=True, null=True)  # Enlace opcional
     published_at = models.DateTimeField(auto_now_add=True)  # Fecha de publicación automática
+
+    class Meta:
+        '''Meta options for the story model'''
+        verbose_name_plural = "News"
 
     def __str__(self):
         return self.title
