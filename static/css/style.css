@@ -23,7 +23,6 @@ p {
 }
 
 #django-msg {
-    margin-top: 15px !important;
     height: 2.5em;
     padding: 0;
     margin: auto;
