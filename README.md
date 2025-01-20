@@ -381,6 +381,7 @@ These future features aim to create a more comprehensive and interactive learnin
 ## Testing and Validations
 
 ### Testing
+* Validation of HTML/CSS/JavaScript, Lighthouse Audits, Bugs
 
 
 * [Back to Contents](#contents)
