@@ -317,7 +317,7 @@ Cloning is often used for experimenting locally.  It will not show up on your Gi
 
   * [Back to Contents](#contents)
 
-  ### Credits
+  ## Credit
 
 ### Content References
 
@@ -345,7 +345,7 @@ These future features aim to create a more comprehensive and interactive learnin
 
 - Special thanks to the instructors and mentors - ****, ****, and **** for their invaluable guidance and support throughout the process.
 
-## Credit
+
 
 ### Images
 
