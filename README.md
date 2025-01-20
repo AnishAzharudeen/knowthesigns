@@ -343,24 +343,24 @@ Cloning is often used for experimenting locally.  It will not show up on your Gi
 ## User Stories and Accepatance Criteria
 
 ### User Stories for Users
-As a User, I want to learn about the signs of human trafficking, so that I can identify potential victims.
-As a User, I want to access educational resources, so that I can educate myself on human trafficking and slavery.
-As a User, I want to participate in interactive quizzes, so that I can test my knowledge on human trafficking.
-As a User, I want to read and share user stories, so that I can learn from others' experiences and share my own.
-As a User, I want to join forums, so that I can discuss and engage with the community on topics related to human trafficking.
-As a User, I want to access support resources, so that I can find help if I or someone I know is a victim of human trafficking.
-As a User, I want to receive regular updates and newsletters, so that I can stay informed about new information and resources.
-As a User, I want to have a user-friendly interface, so that I can easily navigate the website and find the information I need.
+1.As a User, I want to learn about the signs of human trafficking, so that I can identify potential victims.
+2.As a User, I want to access educational resources, so that I can educate myself on human trafficking and slavery.
+3.As a User, I want to participate in interactive quizzes, so that I can test my knowledge on human trafficking.
+4.As a User, I want to read and share user stories, so that I can learn from others' experiences and share my own.
+5.As a User, I want to join forums, so that I can discuss and engage with the community on topics related to human trafficking.
+6.As a User, I want to access support resources, so that I can find help if I or someone I know is a victim of human trafficking.
+7.As a User, I want to receive regular updates and newsletters, so that I can stay informed about new information and resources.
+8.As a User, I want to have a user-friendly interface, so that I can easily navigate the website and find the information I need.
 
 ### User Stories for Admins
-As an Admin, I want to manage user accounts, so that I can ensure the security and integrity of the platform.
-As an Admin, I want to add and update educational content, so that the information provided is accurate and up-to-date.
-As an Admin, I want to moderate forums and user stories, so that I can maintain a safe and respectful community environment.
-As an Admin, I want to manage interactive quizzes, so that I can provide engaging and informative content for users.
-As an Admin, I want to collaborate with law enforcement and NGOs, so that I can ensure the content is trustworthy and reliable.
-As an Admin, I want to track user engagement and feedback, so that I can continuously improve the platform.
-As an Admin, I want to manage support resources, so that users can easily find help and assistance.
-As an Admin, I want to implement and manage marketing strategies, so that I can attract and retain users.
+1.As an Admin, I want to manage user accounts, so that I can ensure the security and integrity of the platform.
+2.As an Admin, I want to add and update educational content, so that the information provided is accurate and up-to-date.
+3.As an Admin, I want to moderate forums and user stories, so that I can maintain a safe and respectful community environment.
+4.As an Admin, I want to manage interactive quizzes, so that I can provide engaging and informative content for users.
+5.As an Admin, I want to collaborate with law enforcement and NGOs, so that I can ensure the content is trustworthy and reliable.
+6.As an Admin, I want to track user engagement and feedback, so that I can continuously improve the platform.
+7.As an Admin, I want to manage support resources, so that users can easily find help and assistance.
+8.As an Admin, I want to implement and manage marketing strategies, so that I can attract and retain users.
 
 
 ## Future features
