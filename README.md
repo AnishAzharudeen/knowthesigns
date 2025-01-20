@@ -35,6 +35,7 @@ By providing these resources and fostering a community of support, "Know the Sig
     - [Here's a step-by-step guide to cloning:](#heres-a-step-by-step-guide-to-cloning)
     - [Resources](#resources)
     - [Media](#media)
+    - [Testing and Validations](testing-and-validation)
     - [Credits](#credits)
     - [Content References](#content-references)
       - [Copilot](#copilot)
@@ -361,6 +362,11 @@ We have several exciting features planned for future development to enhance this
 
 
 These future features aim to create a more comprehensive and interactive learning environment, supporting the educational growth of children while keeping parents and teachers actively involved.
+
+## Testing and Validations
+
+### Testing
+
 
 
  ## Credit
