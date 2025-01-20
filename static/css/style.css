@@ -100,10 +100,6 @@ p {
 
 }
 
-.carousel-style {
-    max-width: 70vw;
-}
-
 /* Home Page */
 
 .main-title {
@@ -182,7 +178,14 @@ p {
 }
 
 #testimonies {
-    background-color: rgb(247, 247, 247);
+    padding: 2em;
+    border: 0.3em solid black;
+    border-style: double;
+    border-right: 0;
+    border-left: 0;
+    /* margin: 0.2em; */
+    border-color: #6c6c6c;
+    background: #ffffff;
 }
 
 /* Advice */
@@ -344,7 +347,8 @@ p {
 }
 
 .carousel-story-container {
-    display: flex;
+    display: flex
+;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -352,6 +356,11 @@ p {
     text-align: center;
     width: 70%;
     margin: 1em auto;
+    border: 0.3em solid #aecfd391;
+    border-style: double;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 3%;
 }
 
 .carousel-arrows {
