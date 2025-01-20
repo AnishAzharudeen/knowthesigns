@@ -33,7 +33,7 @@
 }
 
 .header-container4{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/testemonies_head.jpg")!important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/testemonies_head.webp")!important;
     background-repeat: no-repeat;
     background-size:cover;
     display: grid;
