@@ -422,7 +422,7 @@ These future features aim to create a more comprehensive and interactive learnin
 #### Educational sites
 
     * UKGovernmentsites : https://www.gov.uk/government/publications/modern-slavery-training-resource-page/modern-slavery-training-resource-page
-    * WalesUKGovernmentsites:https://www.e-lfh.org.uk/programmes/modern-slavery/
+    * WalesGovernmentsites:https://www.e-lfh.org.uk/programmes/modern-slavery/
    
 
 
