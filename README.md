@@ -52,15 +52,15 @@ By providing these resources and fostering a community of support, "Know the Sig
     * [Improvements & future developments](#improvements-and-future-developments)
   - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
   - [Future features](#future-features)
-    - [Credits](#credits)
-    - [Content References](#content-references)
+
+  - [Credit](#credit)
+  -     - [Content References](#content-references)
       - [Copilot](#copilot)
       - [Educational sites](#educational-sites)
 
 
 
   - [Acknowledgement](#acknowledgement)
-  - [Credit](#credit)
     - [Images](#images)
 
 ## USER EXPERIENCE (UX)
