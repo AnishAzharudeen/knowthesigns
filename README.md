@@ -225,7 +225,7 @@ The site has been built with the following tech, tools and libraries
   Initially, Django was installed following this Code Institute [DRF Cheatsheet](https://docs.google.com/document/d/1LCLxWhmW_4VTE4GXsnHgmPUwSPKNT4KyMxSH8agbVqU/edit#heading=h.mpopj7v69qqn)
 
    1. Create a Cloudinary account and gather API key
-   2. Create ElephantSQL database and gather API key
+   2. Create PostgresSQL database and gather API key
    3. Install Django
    4. Create project
    5. Install Cloudinary Storage
