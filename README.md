@@ -385,8 +385,8 @@ These future features aim to create a more comprehensive and interactive learnin
 * Validation of HTML/CSS/JavaScript, Lighthouse Audits, Bugs
  #### Google Lighthouse Testing:
 
- ![LighthouseResults][cssValidationImage]
-
+ ![LighthouseResultsforHomeDesktop](./static/readme/lighthouse/home_d.PNG)
+ ![LighthouseResultsforHomeMobile](./static/readme/lighthouse/home_m.PNG)
 
  ####  Css Validation:
   
