@@ -384,7 +384,7 @@ These future features aim to create a more comprehensive and interactive learnin
 ### Testing
 * Validation of HTML/CSS/JavaScript, Lighthouse Audits, Bugs
  #### Google Lighthouse Testing:
- ![LighthouseResults](../knowthesigns/static/img/validation/css-validation.png)
+ ![LighthouseResults][cssValidationImage]
  
 
 * [Back to Contents](#contents)
@@ -418,3 +418,6 @@ These future features aim to create a more comprehensive and interactive learnin
 =======
 - We would also like to express our gratitude to our amazing team for their hard work, dedication, and collaboration in bringing "Know the signs" to life.
 * [Back to Contents](#contents)
+
+
+[cssValidationImage]: ./static/img/validation/css-validation.png
