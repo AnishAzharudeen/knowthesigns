@@ -384,6 +384,7 @@ These future features aim to create a more comprehensive and interactive learnin
 ### Testing
 * Validation of HTML/CSS/JavaScript, Lighthouse Audits, Bugs
  #### Google Lighthouse Testing:
+ ![LighthouseResults](../knowthesigns/static/img/validation/css-validation.png)
  
 
 * [Back to Contents](#contents)
