@@ -83,11 +83,12 @@ p {
 
 .btn-edit {
     color: black !important;
-    background-color: #1B9AAA !important;
-    border-color: #313638 !important;
+    background-color: #b4f6ff !important;
     text-decoration: none;
     width: fit-content;
     display: inline-block;
+    border: 1px solid #7d7d7d;
+    border-radius: .25rem;
 }
 
 /* Images */
@@ -155,6 +156,27 @@ p {
     height: 100%;
 }
 
+.bg-ngo {
+    border: 1px solid #313638;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
+.ngo-head{
+    text-align: center;
+    align-content: start;
+}
+
+.ngo-margin {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.ngo-link {
+    text-decoration: none;
+    color: black;
+}
 
 @media (min-width:768px) {
     .main-title {

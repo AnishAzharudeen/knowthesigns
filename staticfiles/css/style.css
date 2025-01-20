@@ -154,6 +154,27 @@ p {
     height: 100%;
 }
 
+.bg-ngo {
+    border: 1px solid #313638;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+}
+
+.ngo-head{
+    text-align: center;
+    align-content: start;
+}
+
+.ngo-margin {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.ngo-link {
+    text-decoration: none;
+    color: black;
+}
 
 @media (min-width:768px) {
     .main-title {
