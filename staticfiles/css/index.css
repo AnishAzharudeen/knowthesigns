@@ -37,8 +37,7 @@
     background-repeat: no-repeat;
     background-size:cover;
     display: grid;
-    place-items: center;
-    min-height: 70vh;
+    min-height: 90vh;
     height: fit-content;
 }
 
@@ -55,5 +54,5 @@
         height: auto;
         margin: 10px auto;
     }
-    
+
 }
