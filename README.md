@@ -35,7 +35,8 @@ here we neeed to add a description
     - [Images](#images)
   
 ## CONTENTS
-## USER EXPERIENCE (UX)
+
+### USER EXPERIENCE (UX)
 
 ### Purpose
 
