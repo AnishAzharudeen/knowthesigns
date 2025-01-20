@@ -55,7 +55,7 @@ By providing these resources and fostering a community of support, "Know the Sig
   - [Future features](#future-features)
 
   - [Credits](#credits)
-  -     - [Content References](#content-references)
+  -   - [Content References](#content-references)
       - [Copilot](#copilot)
       - [Educational sites](#educational-sites)
 
