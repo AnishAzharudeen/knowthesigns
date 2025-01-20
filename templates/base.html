@@ -37,7 +37,7 @@
     <div>
         <div class="bg-head bg-logo-icon">
 
-            <div id="nav-logo"></div>
+            <a href="{% url 'home' %}"><div id="nav-logo"></div></a>
             <h1 class="onyx text-center main-title">
                 Human Trafficing and Slavery Prevention
             </h1>
@@ -53,10 +53,10 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link active" href="/">Home</a>
-                        <a class="nav-link" href="{% url 'stories' %}">Testimonies</a>
+                        <a class="nav-link" href="{% url 'stories' %}">Survivor Stories</a>
                         <a class="nav-link" href="{% url 'advice' %}">Signs of Exploitation</a>
                         <a class="nav-link" href="{% url 'news' %}">News</a>
-                        <a class="nav-link" href="{% url 'create-full-report' %}">Report an Activity</a>
+                        <a class="nav-link" href="{% url 'create-full-report' %}">Report Anonymously</a>
                     </div>
                 </div>
             </div>
@@ -64,17 +64,13 @@
     </div>
 
     <!-- Django messages -->
-    <div class="container">
-        <div class="row">
-            <div class="text-end">
-                {% for message in messages %}
-                <div class="alert {{ message.tags }}" id="msg" role="alert">
-                    {{ message | safe }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                {% endfor %}
-            </div>
+    <div id="msg-container">
+        {% for message in messages %}
+        <div class="alert {{ message.tags }}" id="django-msg" role="alert">
+            <span id="msg-content">{{ message | safe }}</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
+        {% endfor %}
     </div>
     {% block content %}
 

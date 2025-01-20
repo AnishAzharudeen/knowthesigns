@@ -14,6 +14,32 @@ p {
     margin: 0;
 }
 
+/* Django messages */
+
+#msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#django-msg {
+    margin-bottom: 0;
+    height: 2.5em;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    border-radius: 0;
+    border-bottom: 1px solid darkgray;
+}
+
+#msg-content {
+    margin: auto;
+}
+
 /* General styles */
 
 .bg-head {
@@ -72,10 +98,6 @@ p {
         width: auto;
     }
 
-}
-
-.carousel-style {
-    max-width: 70vw;
 }
 
 /* Home Page */
@@ -155,6 +177,16 @@ p {
     padding: 10px;
 }
 
+#testimonies {
+    padding: 2em;
+    border: 0.3em solid black;
+    border-style: double;
+    border-right: 0;
+    border-left: 0;
+    /* margin: 0.2em; */
+    border-color: #6c6c6c;
+    background: #ffffff;
+}
 
 /* Advice */
 
@@ -192,9 +224,10 @@ p {
 
 .full-form {
     margin: 15px;
-    border: 1px solid #313638;
-    border-radius: 5px;
-    background-color: #F5F1E3;
+}
+
+.login-form .form-group label {
+    padding-left: 0;
 }
 
 .form-group {
@@ -314,7 +347,8 @@ p {
 }
 
 .carousel-story-container {
-    display: flex;
+    display: flex
+;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -322,6 +356,11 @@ p {
     text-align: center;
     width: 70%;
     margin: 1em auto;
+    border: 0.3em solid #aecfd391;
+    border-style: double;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 3%;
 }
 
 .carousel-arrows {
@@ -346,12 +385,18 @@ p {
     margin: 1em;
     display: inline-block;
     font-weight: bold;
+    border: 1px solid #bbbbbb;
 }
 
 /* Workers */
 
 .login-form {
     max-width: fit-content;
+    margin: auto;
+}
+
+.login-form .form-group {
+    margin: 2em 0;
 }
 
 .page-wrapper {
