@@ -83,6 +83,7 @@ p {
     border-color: #313638 !important;
     text-decoration: none;
     width: fit-content;
+    display: inline-block;
 }
 
 /* Images */
