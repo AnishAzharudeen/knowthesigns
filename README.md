@@ -34,10 +34,8 @@ here we neeed to add a description
   - [Acknowledgement](#acknowledgement)
   - [Credit](#credit)
     - [Images](#images)
-  
-##  CONTENTS
 
-### USER EXPERIENCE (UX)
+## USER EXPERIENCE (UX)
 
 ### Purpose
 
