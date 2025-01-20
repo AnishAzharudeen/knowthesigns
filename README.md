@@ -384,8 +384,15 @@ These future features aim to create a more comprehensive and interactive learnin
 ### Testing
 * Validation of HTML/CSS/JavaScript, Lighthouse Audits, Bugs
  #### Google Lighthouse Testing:
+
  ![LighthouseResults][cssValidationImage]
- 
+
+
+ ####  Css Validation:
+  
+  *Passed alll the CSS validation
+
+ ![CSSResults][cssValidationImage]
 
 * [Back to Contents](#contents)
  ## Credits
