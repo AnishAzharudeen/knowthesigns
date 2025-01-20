@@ -7,12 +7,15 @@ class ReportForm(forms.ModelForm):
     '''Form for creating a report'''
     message = forms.CharField(
         widget=forms.Textarea(attrs={
-            'placeholder': 'Write your message here...', 
+            'placeholder': 'Recognise any signs of trafficking or\
+                suspicious activity?\
+                Please provide as much detail as possible.',
             'rows': 5,  
             'cols': 40  
         }),
         label='Message',  
     )
+
     class Meta:
         model = Report
         fields = ['message']
