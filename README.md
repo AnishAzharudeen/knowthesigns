@@ -54,7 +54,7 @@ By providing these resources and fostering a community of support, "Know the Sig
   - [User Stories and Acceptance criteria](#user-stories-and-acceptance-criteria)
   - [Future features](#future-features)
 
-  - [Credit](#credit)
+  - [Credits](#credits)
   -     - [Content References](#content-references)
       - [Copilot](#copilot)
       - [Educational sites](#educational-sites)
@@ -387,7 +387,7 @@ These future features aim to create a more comprehensive and interactive learnin
  
 
 * [Back to Contents](#contents)
- ## Credit
+ ## Credits
 
 ### Content References
 
