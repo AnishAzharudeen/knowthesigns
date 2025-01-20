@@ -402,10 +402,10 @@ These future features aim to create a more comprehensive and interactive learnin
 
  ####  HTML Validation:
 
- ![HTMLHomePage](./static/readme/HtmlValidation/)
- ![HTMLStoriesPage](./static/readme/HtmlValidation)
- ![HTMLNewsPage](./static/readme/HtmlValidation/)
- ![HTMLStoriesPage](./static/readme/HtmlValidation/)
+ ![HTMLHomePage](./static/readme/HtmlValidation/HtmlHome.png)
+ ![HTMLStoriesPage](./static/readme/HtmlValidation/HtmlStories.png)
+ ![HTMLNewsPage](./static/readme/HtmlValidation/HtmlNews.png)
+ ![HTMLReportPage](./static/readme/HtmlValidation/HtmlReort.png)
 
 
  Passed HTML validations for all the links.
