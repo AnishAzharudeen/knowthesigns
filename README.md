@@ -34,7 +34,7 @@ here we neeed to add a description
   - [Credit](#credit)
     - [Images](#images)
   
-## CONTENTS
+##  CONTENTS
 
 ### USER EXPERIENCE (UX)
 
