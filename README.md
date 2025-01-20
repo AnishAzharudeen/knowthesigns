@@ -400,7 +400,13 @@ These future features aim to create a more comprehensive and interactive learnin
 
  ![CSSResults][cssValidationImage]
 
- ####  Css Validation:
+ ####  HTML Validation:
+
+ ![HTMLHomePage](./static/readme/HtmlValidation/)
+ ![HTMLStoriesPage](./static/readme/HtmlValidation)
+ ![HTMLNewsPage](./static/readme/HtmlValidation/)
+ ![HTMLStoriesPage](./static/readme/HtmlValidation/)
+
 
  Passed HTML validations for all the links.
 
